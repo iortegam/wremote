@@ -1,0 +1,10 @@
+- TO STARTUP PROGRAMS AFTER PC RESTART
+press the Windows logo key  + R, type shell:startup, then select OK. This opens the Startup folder.
+
+Copy and paste the shortcut to the app from the file location to the Startup folder.
+
+-------------
+10/18/2024: iom
+Today I perform a backup of the wremote folder (C:\Users\bldopus\wremote) - to the google folder: OT Projects/Remote/FL0
+NOTE: After the backup I deleted files in the PC under C:\Users\bldopus\wremote\Admin\BLD because PC did not have enough space.
+-------------
