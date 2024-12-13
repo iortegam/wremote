@@ -1,7 +1,37 @@
+#---------------------
+# Initial commands to backup wremote to github
+#---------------------
+(1) Install git --> https://git-scm.com/
+
+Then follow the next commands:
+
+Right click on wremote and choose "open Git Bash here"
+
 git init
 git status
+add a .gitignore to ignore folders (XPM, ADMIN, Macro)
+
 git config --global --add safe.directory C:/Users/bldopus/wremote
 git config --global user.name "iortega"
 git config --global user.email iortega@ucar.edu
 git add .
 git commit -m "onlogic fanless PC FTS" .
+
+
+(2) Create the repository in github: https://github.com/
+
+Ivan's token: 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
+
+Once the repository and token are created: is
+
+git remote add origin https://[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]@github.com/iortegam/wremote
+git push -u origin main
+
+
+#---------------------
+# Follow this after the above has been done and after changes in codes
+#---------------------
+git status
+git add .
+git commit -m "comments" .
+git push -u origin main
