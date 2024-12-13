@@ -455,3 +455,4 @@ Fri, 13 Dec 2024 22:02:04 INFO     Initial solar Conditions OK: 7.42 a.u (scaled
 Fri, 13 Dec 2024 22:02:04 INFO     sza (deg): 76.67, saa (deg): 223.33
 Fri, 13 Dec 2024 22:13:08 INFO     Initial solar Conditions OK: 6.95 a.u (scaled by cos(sza))
 Fri, 13 Dec 2024 22:13:08 INFO     sza (deg): 78.15, saa (deg): 225.45
+Fri, 13 Dec 2024 22:40:05 INFO     Solar Conditions not ok: 0.84 a.u (scaled by cos(sza))
