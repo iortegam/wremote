@@ -1,0 +1,7 @@
+git init
+git status
+git config --global --add safe.directory C:/Users/bldopus/wremote
+git config --global user.name "iortega"
+git config --global user.email iortega@ucar.edu
+git add .
+git commit -m "onlogic fanless PC FTS" .
