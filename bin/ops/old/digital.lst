@@ -1,0 +1,26 @@
+# 04 AUG 1998
+# This is a list of the digital inputs at the OPTO-22
+# 0-7 are output controls
+# 8-15 are inputs - mostly the optical switchs on the stepper tracker
+# format of the file:
+# # - is a comment
+# ! - ends the file
+# OPTO-22 is active low
+# channel mechanical_state_for_logic_0  same_for_logic_1 description
+0 ON OFF Electronics AC 0
+1 ON OFF Electronics AC 1 -> LN2
+2 ON OFF Bruker Electronics Relay
+3 OPEN CLOSE Tracker Door Direction
+4 ON OFF Tracker Door Motor
+5 ON OFF Observation Plug Strip
+6 ON OFF Tracker Watchdog Toggle
+7 OFF ON ON Plug Strip
+8 ON OFF Elevation Low Limit Switch
+9 ON OFF Elevation High Limit Switch
+10 ON OFF Azimuth Low Limit Switch
+11 ON OFF Azimuth High Limit Switch
+12 ON OFF Tracker Door Closed Switch
+13 ON OFF Tracker Door Open Switch
+14 ON OFF N/A
+15 ON OFF N/A
+!

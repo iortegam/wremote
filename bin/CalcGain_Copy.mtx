@@ -1,0 +1,232 @@
+REM -------------------------------
+REM Macro to run at Thule Greenland
+REM -------------------------------
+
+VARIABLES SECTION
+
+FILE <$ResultFile>    = ScSm;
+FILE <$TestFile>      = ScSm;
+
+NUMERIC <Year>          = 0;
+NUMERIC <Month>         = 0;
+NUMERIC <Day>           = 0;
+NUMERIC <Hour>          = 0;
+NUMERIC <Minute>        = 0;
+NUMERIC <Second>        = 0;
+NUMERIC <SNRu>          = 420;
+NUMERIC <SNRl>          = 400;
+NUMERIC <SNR>           = 0;
+NUMERIC <testFlg>       = 0;
+NUMERIC <AmpFactor>     = 30000;
+NUMERIC <AmpPred>       = 0;
+NUMERIC <ind>           = 0;
+NUMERIC <peakAmpl>      = 0;
+NUMERIC <sclFct>        = 0;
+NUMERIC <sclFct>        = 0;
+NUMERIC <NoiseRMS>      = 0;
+NUMERIC <MaxY>          = 0;
+NUMERIC <CalcSNR>       = 0;
+NUMERIC <PGN_fctr>      = 0;
+NUMERIC <SGN_fctr>      = 0;
+
+STRING <Xpm_Name>     = '';
+STRING <XpmPath>      = '';
+STRING <testDataName> = 'PreAmpGainTest';
+STRING <Date>         = '';
+STRING <Time>         = '';
+STRING <Daydir>       = '';
+STRING <Filename>     = '';
+STRING <preAmpGain>   = '';
+STRING <signalGain>   = '';
+STRING <MeasTime>     = '';
+STRING <LogPath>      = 'C:\OPUSIO_Logs';
+STRING <LogFname>     = '';
+
+
+PROGRAM SECTION
+
+REM --------------------
+REM Get data from client
+REM --------------------
+UserDialog ('0', NODEFAULTBUTTONS,EDIT:'<Xpm_Name>',EDIT:'<XpmPath>',EDIT:'<Daydir>',EDIT:'<testFlg>',BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK);
+
+REM ----------------------------------------------
+REM Define step in gain factors for each iteration
+REM ----------------------------------------------
+<PGN_fctr>[0]    =  1;
+<SGN_fctr>[0]    =  1;
+<preAmpGain>[0]  = '3';
+<signalGain>[0]  = '1';
+
+<PGN_fctr>[1]    =  1;
+<SGN_fctr>[1]    =  2;
+<preAmpGain>[1]  = '3';
+<signalGain>[1]  = '2';
+
+<PGN_fctr>[2]    =  1;
+<SGN_fctr>[2]    =  4;
+<preAmpGain>[2]  = '3';
+<signalGain>[2]  = '4';
+
+<PGN_fctr>[3]    =  1;
+<SGN_fctr>[3]    =  8;
+<preAmpGain>[3]  = '3';
+<signalGain>[3]  = '8';
+
+<PGN_fctr>[4]    =  1;
+<SGN_fctr>[4]    =  16;
+<preAmpGain>[4]  = '3';
+<signalGain>[4]  = '16';
+
+<PGN_fctr>[5]    =  4;
+<SGN_fctr>[5]    =  8;
+<preAmpGain>[5]  = '0';
+<signalGain>[5]  = '8';
+
+<PGN_fctr>[6]    =  4;
+<SGN_fctr>[6]    =  16;
+<preAmpGain>[6]  = '0';
+<signalGain>[6]  = '16';
+
+<PGN_fctr>[7]    =  68;
+<SGN_fctr>[7]    =  1;
+<preAmpGain>[7]  = '2';
+<signalGain>[7]  = '1';
+
+REM -----------------
+REM Get date and time
+REM -----------------
+GetTime(<Year>,<Month>,<Day>,<Hour>,<Minute>,<Second>);
+<Date> = '<[4]Year><[2]Month><[2]Day>';
+<Time> = '<[2]Hour>:<[2]Minute>:<[2]Second>';
+
+REM -----------------------
+REM Construct Log File Name
+REM -----------------------
+<LogFname> = '<Date>_<Time>.log';
+
+REM ----------------------------
+REM Write to log file and screen
+REM ----------------------------
+StaticMessage (SHOW, {'Running OPUS with following Parameters:','XpmName = <Xpm_Name>','XpmPath = <XpmPath>','DayDir = <Daydir>','TestFlg = <testFlg>'});
+Timer (WAITTIME, 5);
+StaticMessage (HIDE,{});
+
+REM ---------------------------------------
+REM Determine if this is a test measurement
+REM ---------------------------------------
+If (<testFlg>, .EQ., 1); 
+
+REM ---------------------
+REM Take test measurement
+REM ---------------------
+StaticMessage (SHOW, {'Taking Baseline Measurement'});
+Timer (WAITTIME, 3);
+StaticMessage (HIDE,{});
+
+<$TestFile>  = MeasureSample (0, {EXP='<Xpm_Name>', XPP='<XpmPath>',PTH='<Daydir>',NAM='<testDataName>',PGN='<preAmpGain>[0]',SGN='<signalGain>[0]',RES=1,NSS=1});
+<peakAmpl>   = GetParameter ([<$TestFile>], PKA);
+REM <sclFct>     = GetParameter ([<$TestFile>:IgSm], CSF);
+<peakAmpl>   = <peakAmpl> * <SGN_fctr>[0];
+
+StaticMessage (SHOW, {'Finished Baseline Measurement'});
+Timer (WAITTIME, 3);
+StaticMessage (HIDE,{});
+
+REM ---------------------------
+REM Unload and delete test file
+REM ---------------------------
+Unload ([<$TestFile>], {});
+Delete ('<Daydir>\<testDataName>*');
+
+REM -----------------------------------------------
+REM Loop for Peak Amplitude calculation using gains
+REM -----------------------------------------------
+StaticMessage (SHOW, {'Calculating Gain'});
+Timer (WAITTIME, 3);
+StaticMessage (HIDE,{});
+
+StartLoop(8,0);
+
+REM ------------------------------
+REM Calculate Peak Amplitude Ratio
+REM ------------------------------
+<AmpPred> = <peakAmpl> * <PGN_fctr>[<ind>] * <SGN_fctr>[<ind>];
+
+REM ----------------------------------------------
+REM Determine if peak amplitude is above threshold
+REM ----------------------------------------------
+If (<AmpPred>, .GT., <AmpFactor>);
+Goto (FoundGain);
+Endif();
+
+REM -------------------
+REM Count up gain index
+REM -------------------
+<ind> = <ind> + 1;
+
+REM --------------
+REM End outer loop
+REM --------------
+EndLoop(0);
+
+Label(FoundGain);
+
+REM -----------------------------
+REM Choose previous gain settings
+REM -----------------------------
+<ind> = <ind> - 1;
+
+
+StaticMessage (SHOW, {'Found Proper Gains, Running Full Scan...','PGN=<preAmpGain>[<ind>]','SGN=<signalGain>[<ind>]','Taking Full Measurement'});
+Timer (WAITTIME, 3);
+StaticMessage (HIDE,{});
+
+
+REM ----------------------
+REM Run actual measurement
+REM ----------------------
+<$ResultFile>  = MeasureSample (0, {EXP='<Xpm_Name>', XPP='<XpmPath>',PTH='<Daydir>',PGN='<preAmpGain>[<ind>]',SGN='<signalGain>[<ind>]'});
+<peakAmpl>     = GetParameter ([<$ResultFile>], PKA);
+REM <sclFct>   = GetParameter ([<$ResultFile>:IgSm], CSF);
+<peakAmpl>     = <peakAmpl> * <SGN_fctr>[<ind>];
+
+StaticMessage (SHOW, {'Finished Scan','Scaled Peak Amplitude=<peakAmpl>'});
+Timer (WAITTIME, 3);
+StaticMessage (HIDE,{});
+
+REM ----------------------------------------------------
+REM Do not determine gains, just use what is in XPM file
+REM ----------------------------------------------------
+Else();
+<$ResultFile>  = MeasureSample (0, {EXP='<Xpm_Name>', XPP='<XpmPath>',PTH='<Daydir>'});
+Endif();
+
+REM ---------------------------------------------------
+REM Calculate Signal-to-Noise Ratio in specified region
+REM ---------------------------------------------------
+SignalToNoise ([<$ResultFile>:ScSm], {NF1=<SNRl>, NF2=<SNRu>, SNF=5});
+
+REM ----------------------------------------
+REM Retrieve information from this specrtrum
+REM ----------------------------------------
+<SNR>        = GetParameter ([<$ResultFile>:ScSm], SN1);
+<preAmpGain> = GetParameter ([<$ResultFile>:ScSm], PGN);
+<signalGain> = GetParameter ([<$ResultFile>:ScSm], SGN);
+<Filename>   = GetParameter ([<$ResultFile>:ScSm], NAM);
+<MeasTime>   = GetParameter ([<$ResultFile>:ScSm], TIM);
+<NoiseRMS>   = GetParameter ([<$ResultFile>:ScSm], SN5);
+<MaxY>       = GetParameter ([<$ResultFile>:ScSm], MXY);
+<CalcSNR>    = <MaxY> / <NoiseRMS>;
+
+REM -------------------
+REM Unload file results
+REM -------------------
+Unload ([<$ResultFile>:ScSm], {});
+
+REM -------------------
+REM Pass data to client
+REM -------------------
+UserDialog ('0', NODEFAULTBUTTONS,EDIT:'<MeasTime>',EDIT:'<Filename>',EDIT:'<CalcSNR>',EDIT:'<peakAmpl>',EDIT:'<preAmpGain>',EDIT:'<signalGain>',BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK);
+
+PARAMETER SECTION

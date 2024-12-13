@@ -1,0 +1,90 @@
+#----------------------------------------------------------------------------------------
+# Name:
+#        thule_MainInput.inp
+#
+# Purpose:
+#       This is the main input file for remote operations at TAB
+#
+#
+#
+# Notes:
+#       1)
+#
+#
+#
+#----------------------------------------------------------------------------------------
+
+#------------------------
+# Base directory for data
+#------------------------
+baseDataDir = /home/tabftir/daily/
+
+#---------------------------
+# TCP Data Server Parameters
+#-------------------------------------------------------------------------------------------
+# FTSDataServ_IP   -- IP address of where the TCP data server is hosted
+# FTSDataServ_PORT -- Port used by the TCP data server
+# Bruker_IP        -- IP address of the EWS on Bruker
+# OPUSServer_IP    -- IP address of the Windows PC running OPUS
+# TCPbufferSize    -- Max buffer size allowed in transfer of data to and from TCP data server
+# EWSupdateInt     -- Interval [seconds] between updating the TCP data server with information from the Bruker EWS
+#-------------------------------------------------------------------------------------------
+FTSDataServ_IP   = 192.168.1.100
+FTSDataServ_PORT = 5555
+Bruker_IP        = 192.168.1.102
+OPUSServer_IP    =
+TCPbufferSize    = 1024
+EWSupdateInt     = 5
+
+#-----------------------
+# SMTP email information
+#--------------------------------------------------------------------------
+# fromEmail   -- Email address sent from. This does not need to be a legite
+#                email address
+# toEmail     -- Email address(s) letter is sent to. Comma delimited.
+#---------------------------------------------------------------------------
+fromEmail = tab@thule
+toEmail   = ebaumer@ucar.edu,jamesw@ucar.edu
+
+#---------------------
+# Input lists for tabd
+#---------------------------------------------------------------------------
+AnalogFile   -- List of analog inputs
+DigitalFile  -- List of digital inputs and outputs
+#---------------------------------------------------------------------------
+AnalogFile  = /home/tabftir/remote/ops/analog.list
+DigitalFile = /home/tabftir/remote/ops/digital.list
+
+#-------------------------
+# Input lists for dispatch
+#---------------------------------------------------------------------------
+OPUSScanList = list of experiments to send OPUS
+TopoFile     = horizon minimums
+#---------------------------------------------------------------------------
+OPUSScanList = /home/tabftir/remote/ops/opusscan.list
+TopoFile     = /home/tabftir/remote/ops/thule.top
+
+#-------------------------
+# Dispatch command
+#---------------------------------------------------------------------------
+RemoteCmdFile = Command file searched in each dispatch loop
+#---------------------------------------------------------------------------
+RemoteCmdFile = /home/tabftir/remote/ops/command.rmt
+
+
+#--------------------------------
+# Observing Conditions Parameters
+#-------------------------------------------------------------------------------------------
+SensorASolarMin   -- External solar sensor A, volts 0-10
+SensorBSolarMin   -- External solar sensor A, volts 0-10
+MaxWindSpeed      -- Maximum tolerable wind speed meters/sec
+MaxRelHumidity    -- Maximum outside relativity %rh
+LN2FillTime       -- Time to hold LN2 switch on during detector fill in seconds
+#-------------------------------------------------------------------------------------------
+EastSolarMin   = 7.5
+WestSolarMin   = 7.5
+MaxWindSpeed   = 10.0
+qguidermin     = 9.5
+MaxRelHumidity = 90.0
+LN2FillTime    = 380
+!

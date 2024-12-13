@@ -1,0 +1,66 @@
+#
+# DEFAULT.RMT  v0.01 18 April 1997 JWH
+#
+# In this file are any data that the remote program or any of its
+# subprograms may need but is required to be readily changed.
+# '# ' in the first & second column are comments and can be anywhere.
+# The file is searched by keyword ie: "keyword = variable" so that any
+# of the subroutines can find what it needs without worrying about
+# editing or order.
+# Don't use completely blank lines.
+# Use a space after the variable than tabs.
+#
+# OPMODE = cmdline                      ! the user is making the decisions
+OPMODE = AUTO                           ! let it run
+basedir = D:\DAILY                      ! this is where the yymmdd dirs go
+genlogdir = D:\remote\log\              ! be sure to keep '\'
+jazdir = F:\                            ! JAZ drive base directory, be sure '\'
+# jazdir = c:\xdata\
+#
+# input files
+#
+opusscanlist = D:\remote\etc\opusscan.lst       ! macro listing for octrl
+topo = D:\remote\etc\thule.top           ! topography data for viewing limits
+analogfile = D:\remote\etc\analog.lst    ! file for aux analog input parameters
+digitalfile = D:\remote\etc\digital.lst  ! file for aux analog input parameters
+remotecmdfile = D:\remote\command.rmt    ! program control command from file
+#
+# pointer parameters
+#
+# changed from -6.25 8mar2005
+# changed from 0 -5.5 25 mar 07
+# changed from -0.5 -6.5 Jul 07
+# changed from -0.0 -8.5 Jul 07 for lock earlier in day this works at m1000
+# changed to 1 -7.5 at SEA 4.3, AZM -131 & lock
+initd2 = 0.0,-10.5                     ! deg offset for pointer E of S
+initdo = 0.5, 6.0                       ! APR2011 new AZ pot deg offset W of S USE ','!
+# seem to need 0,-10 W & N
+inithp = 5.0,130.0                      ! initial degree home positions USE ','!
+doorclosetime = 40                      ! seconds to shut door  removed regulator
+#
+# changed to OPUS v3.0.4 on 26 Sep 2000
+#
+opusexename = C:\OPUS304\OPUS.EXE       ! OPUS file path and name
+opusdirectory = C:\OPUS304              ! OPUS working directory
+opusversion = v3.0.4                    ! Current version
+npopus = \PIPE\OPUS\SERVER              ! Pipe name
+#
+# ln2 and detector parameters
+#
+ln2filltime = 380                       ! in seconds was 280 on 25mar07
+dettemplow = 0.98                       ! volts detector temp. switch - fill
+dettempmin = 0.95                       ! volts detector temp. switch - warm
+#
+# change to sanjuan see ftpdir.cmd - using acd
+#
+ftpaddress = 128.117.32.211             ! machine to ftp to NOTE file structure!
+sysadmin = pyngyp@gmail.com             ! gets error messages Oh Boy!!!
+#
+# observing conditions parameters
+#
+# 2 @ 0.7nd -> 5.0v; 1 @ 2.0 -> 2.0v
+xternsolmin = 7.5                       ! 5.2->5.8 0703 ->7.0 0808
+# more obs opportunities - see opusscan.lst (.24, .12)
+windspdmax = 10.0                       ! m/s
+qguidermin = 9.5                        ! volts its usually >10.0
+relhummax = 90.0                        ! % does this matter?

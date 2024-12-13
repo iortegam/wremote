@@ -1,0 +1,37 @@
+#
+# Set EWS Cmmands 
+#
+
+#[setup]
+#
+# General setup parameters
+#
+#type     = solar
+#savepath = Y:\id\fl0\TEST\     # Path to save data files
+#holdoff  = 20      # Sleep time in seconds after the end of measurement
+
+#[init]
+#
+# Initialization parameters
+#
+#TIZ = 0                     # Time zone (UTC)
+#UTC = %s                    # %s -> Unix time stamp (seconds since the epoch)
+#IAM = MPI-BGC001_%$         # Session owner, %$ -> process ID
+
+[main]
+#
+# Section with parameters for main command
+#
+WRK = 3                     # Working Mode 1= Measuring Mode; 3 =
+CNM   = MASTER-PC-NCAR        # Operator Name
+SNM   = NCAR-APT              # Sample Name
+DLY   = 0                     # Delay after device change
+DEL   = 0                     # Delay before measurement
+APT   = 500                   # Aperture
+SRC   = 201
+MOT41 = 0
+
+[exit]
+#
+# Parameters to set after the main command has completed
+#

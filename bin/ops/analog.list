@@ -1,0 +1,31 @@
+#-------------------------------------------------------------------------
+#-------------------------------------------------------------------------
+# Name: analog.list
+#
+# Purpose:
+#       analog input signals used at FL0
+#
+# Notes:
+#       - Using a Data Acquisition USB DAQ Device 12-Bit, 100 kS/s (https://www.mccdaq.com/usb-data-acquisition/USB-201.aspx)
+#       - The following lines consist of:
+#             * COLUMN 1: channel number 0 - X, integer
+#             * COLUMN 2: actual flag for channel usage (0-not use; 1-use)
+#             * COLUMNS 3-5: offset (units), slope (units/volts);  curve (units/volts^2) to convert to engineering
+#             * COLUMNS 6-8: expected values: min, max and tolerence in engineering units, float (2)
+#             * COLUMN 9:  units, char string
+#             # COLUMN 10: char string
+#
+# Additional Notes:
+#        - Rough aproximation for LN2 transducer (0-30PSI) using 3-7.6 Volts and 0-20PSI range
+#          Slope = 4.4; offset = -13.
+#         online resource: https://www.omega.com/en-us/resources/data-acquisition-converting-current-and-voltage-to-engineering-units
+#-------------------------------------------------------------------------
+#-------------------------------------------------------------------------
+#COLUMN1 COLUMN2 COLUMN3 COLUMN4 COLUMN5 COLUMN6 COLUMN7 COLUMN8 COLUMN9 COLUMN10
+    0       1   -9.0      4.4     0.0      0.0    15.0     PSI   LQN2P  LN2_Dewar_Press
+    1       1    0.0       1.0     0.0      0.0     28.0   Volts  SK28V  SolSeek
+    2       1    0.0       1.0     0.0      0.0     5.0   Volts   HTC5V  SolHatch
+    3       1    0.0       1.0     0.0      1.0     1.0   Volts   EXSLS  Radiance_E
+    4       0    0.0       1.0     0.0      1.0     1.0   Volts   WXSLS  Radiance_W
+    5       0    -0.3326   14.969  0.0      5.0     5.0     MPH   WSPD   Atm_Wind_Speed
+    6       0   449.2     -64.9    0.0      5.0     5.0     Deg   WDIR   ATM_DAVIS_W_Dir

@@ -1,0 +1,67 @@
+#
+# Set APT 
+#
+
+#[setup]
+#
+# General setup parameters
+#
+#type     = solar
+#savepath = Y:\id\fl0\TEST\     # Path to save data files
+#holdoff  = 20      # Sleep time in seconds after the end of measurement
+
+#[init]
+#
+# Initialization parameters
+#
+#TIZ = 0                     # Time zone (UTC)
+#UTC = %s                    # %s -> Unix time stamp (seconds since the epoch)
+#IAM = MPI-BGC001_%$         # Session owner, %$ -> process ID
+
+[main]
+#
+# Section with parameters for main command
+#
+WRK = 3                     # Working Mode 1= Measuring Mode; 3 =
+#AMD = 7                     # Aquistion Mode
+#UWN = 1                     # Channel specific LWN
+#ITC = 0                     # Instrument Test Class
+CNM = MASTER-PC-NCAR  # Operator Name
+SNM = NCAR-APT      # Sample Name
+#SFM =                       # Sample Form
+DLY = 0                     # Delay after device change
+DEL = 0                     # Delay before measurement
+#RES = 0.014000              # Resolution
+#SRC = 201                   # Source on (NIR)
+#LPF = 40.0                  # Low Pass Filter
+#HPF = 0                     # High Pass Filter
+#BMS = 1                     # Beam Splitter
+APT = 1000                   # Aperture
+#DTC = 0x4022                # Detector Settings
+#VEL = 10.0                  # Scanner Velocity
+#AQM = SD                    # Aquisition Mode
+#HFW = 15500.000000          # Wanted High Frequency Limit
+#LFW = 3800.000000           # Wanted Low Frequency Limit
+#PHR = 4.000000              # Phase Resolution
+#SON = 0                     # External Synchronisation
+#PGN = 0                     # Preamplifier Gain
+#ADC = 0                     # External/Analog Signals
+#CMA = 0                     # Correlation Mode
+#COR = 1                     # Correlation (On/Off)
+#LCL = 0                     # Limit Correlation Low
+#LCH = 32768                 # Limit Correlation High
+#CHN = 1                     # Measurement Chanel
+#SOT = 0                     # Scans or Minutes
+#NSS = 2                     # Number of Scans
+#RDX = 0                     # Bench Ready
+#TSR = 256                   # Tolerance Scan Range
+#GNS = 1                     # Signal or Gain
+#SG2 = 1                     # Left Channel Signal Gain
+#REP = 1                     # Repeat Measurement
+#DDM = 0                     # Display during measurement
+#DLR = 0                     # Display between measurement
+
+[exit]
+#
+# Parameters to set after the main command has completed
+#

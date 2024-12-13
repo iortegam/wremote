@@ -1,0 +1,88 @@
+# analog.list 30 June 1997 JWH v0.1
+# Last update 19 October 1997 in Thule
+# This is a list of the analog input signals used in the Thule data system
+# These are comment lines and can be anywhere.
+# The first line is the number of inputs in list.
+# The following lines consist of:
+#  * channel number 0 - 95, integer
+#  * offset (units) and slope (units/volts) to convert to engineering
+#    values, float (2)
+#  * expected value and tolerence in engineering units, float (2)
+#  * units, char string
+#  * description, char string
+#  200  format( i5, 4f8.0, a8, a35 )
+#   |       |       |       |       |       |
+# 72 use 54 for now - shorten house file
+54
+    0     0.0    10.0    50.0    50.0    DegC TS15 n/a
+    1     0.0    10.0    50.0    50.0    DegC TS16 n/a
+    2     0.0    10.0    50.0    50.0    DegC TS13 n/a
+    3     0.0    10.0    50.0    50.0    DegC TS14 n/a
+    4     0.0     1.0     5.0     5.0   Volts Bruker LASA rectified
+    5     0.0     1.0     5.0     5.0   Volts Bruker LASB rectified
+    6     0.0    10.0    50.0    50.0    DegC TS1 Optic Bench Src Side
+    7     0.0    10.0    50.0    50.0    DegC TS2 Beam Splitter Assembly
+    8     0.0    10.0    50.0    50.0    DegC TS3 Detector Dewar Body
+    9     0.0    10.0    50.0    50.0    DegC TS4 Optic Bench Det Side
+   10     0.0    10.0    50.0    50.0    DegC TS5 dolores Internal H.D.
+   11     0.0    10.0    50.0    50.0    DegC TS6 dolores AQP7/40 transputer
+   12     0.0    10.0    50.0    50.0    DegC TS7 Room Box
+   13     0.0    10.0    50.0    50.0    DegC TS8 Bruker Electronics
+   14     0.0    10.0    50.0    50.0    DegC TS9 dolores CPU
+   15     0.0    10.0    50.0    50.0    DegC TS10 n/a
+   16     0.0    10.0    50.0    50.0    DegC TS11 n/a
+   17     0.0    10.0    50.0    50.0    DegC TS12 n/a
+   18     0.0     1.0      5.     0.5   Volts Temp Preamp Board +5v PS n/a
+   19      0.     2.0    15.0     1.0   Volts Temp Preamp Board +15v PS
+   20      0.    -2.0   -15.0     1.0   Volts Temp Preamp Board -15v PS
+   21      0.     1.0      5.      5.   Volts n/a 0-10V
+   22      0.     1.0      5.      5.   Volts n/a 0-10V
+   23      0.     1.0      5.      5.   Volts n/a 0-10V
+   24      0.     1.0      5.      5.   Volts Detector Intern Temp Switch
+   25      0.     1.0      5.      5.   Volts Detector Insb DC Level n/a
+   26   -25.0    13.30    50.     50.       % Bruker Optic Bench RH
+   27      0.     1.0      5.      5.   Volts n/a 0-10V (Room)
+   28      0.     1.0      5.      5.   Volts n/a 0-10V (Room)
+   29      0.     1.0      5.     0.5   Volts Bruker Electronics +5v PS
+   30      0.     2.0     12.0    1.0   Volts Bruker Electronics +12v PS
+   31      0.    -2.0    -12.0    1.0   Volts Bruker Electronics -12v PS
+   32      0.     1.0      5.      5.   Volts Elevation Angle
+   33      0.     1.0      5.      5.   Volts Azimuth
+   34      0.     1.0      5.      5.   Volts n/a 0-10V
+   35 -82.758  41.379   180.0   180.0   Deg.W Wind Direction from S.
+   36 -12.199    6.13    30.0    30.0     m/s Wind Speed
+   37   800.0    60.0   950.0   150.0    mbar Atmospheric Pressure
+   38  -74.99   12.25     0.0    50.0    DegC Outside Temperature
+   39  -24.99   12.20    50.0    50.0       % Outside Relative Humidity
+   40   -3.74    1.99      7.5     7.5    PSI LN2 Dewar Pressure
+   41      0.     1.0      5.      5.   Volts Room BNC 1
+   42      0.     1.0      5.      5.   Volts Room BNC 2
+   43      0.     1.0      5.      5.   Volts Room BNC 3
+   44      0.     1.0      5.      5.   Volts Room BNC 4
+   45      0.     1.0      5.      5.   Volts dolores +5v PS
+   46      0.     1.0      5.      5.   Volts n/a 0-10V
+   47      0.     1.0      5.      5.   Volts n/a 0-10V
+   48      0.     1.0      5.      5.   Volts Clinometer +5V Ref.
+   49      0.     1.0      5.      5.   Volts Clinometer Roll
+   50      0.     1.0      5.      5.   Volts Clinometer Pitch
+   51      0.     1.0      5.      5.   Volts External Solar Sensor
+   52      0.     1.0      5.      5.   Volts Guider Quad Sensor Sum
+   53      0.     1.0      5.      5.   Volts n/a 0-10V
+   54      0.     1.0      5.      5.   Volts n/a 0-10V
+   55      0.     1.0      5.      5.   Volts n/a 0-10V
+   56      0.     1.0      5.      5.   Volts n/a 0-10V
+   57      0.     1.0      5.      5.   Volts n/a 0-10V
+   58      0.     1.0      5.      5.   Volts n/a 0-10V
+   59      0.     1.0      5.      5.   Volts n/a 0-10V
+   60      0.     1.0      5.      5.   Volts n/a 0-10V
+   61      0.     1.0      5.      5.   Volts n/a 0-10V
+   62      0.     1.0      5.      5.   Volts n/a 0-10V
+   63      0.     1.0      5.      5.   Volts n/a 0-10V
+   64      0.     1.0      5.      5.   Volts n/a 0-10V
+   65      0.     1.0      5.      5.   Volts n/a 0-10V
+   66      0.     1.0      5.      5.   Volts n/a 0-10V
+   67      0.     1.0      5.      5.   Volts n/a 0-10V
+   68      0.     1.0      5.      5.   Volts n/a 0-10V
+   69      0.     1.0      5.      5.   Volts n/a 0-10V
+   70      0.     1.0      5.      5.   Volts n/a 0-10V
+   71      0.     1.0      5.      5.   Volts n/a 0-10V

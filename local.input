@@ -1,0 +1,18 @@
+# local.input
+#
+# initial inputs for NCAR FTIR remote data acquisition system
+# # is a comment
+#
+# on linPC its located at /home/xxxftir/remote/ops/local.input
+# on winPC its located at C:\Users\xxxopus\wremote\local.input
+# where xxx is tab, mlo, bld, jfj etc
+#
+# Same format as xxx_Defaults.input
+#
+# July 2023
+#
+FTS_DATASERV_IP      = 192.168.0.122   #192.168.0.160
+FTS_DATASERV_PORT    = 5555
+DIR_WINBIN           = C:\Users\bldopus\wremote\bin\
+#DIR_LINBIN          = /home/tabftir/remote/bin/     
+CTL_FILE             = C:\Users\bldopus\wremote\bin\ops\FL0_Defaults.input

@@ -1,0 +1,38 @@
+# December 2017 at MLO, Sensoray S626 but new tcp server so add nemonics
+#  active flag
+# July 2015 Thule, move to Sensoray S826 board - there are only 16 ADC's
+# Last update 07 May 2015 in Thule
+# analog.list 30 June 1997 JWH v0.1
+# This is a list of the analog input signals used in the Thule data system
+# These are comment lines and can be anywhere.
+# The first line is the number of inputs in list.
+# The following lines consist of:
+#  * channel number 0 - 95, integer
+#  * actual flag for channel usage
+#  * offset (units) and slope (units/volts) curve (units/volts^2) to convert to engineering
+#    values, float (3)
+#  * expected value and tolerence in engineering units, float (2)
+#  * units, char string
+#  * nemonic for headers
+#  * description, char string
+#  200  format( i5, 4f8.0, a8, a35 )
+#   |       |       |       |       |       |
+# 16 of these
+16
+    0    1   -3.749    1.72    0.0      0.0    15.0     PSI LQN2P LN2_Dewar_Pressure
+    1    1   71.121  -35.255   4.442   25.0    10.0    DegC OBBT  Optic_Bench_Base_T 
+    2    1   71.121  -35.255   4.442   25.0    10.0    DegC BSBT  Beamsplitter_Body_T 
+    3    1   71.121  -35.255   4.442   25.0    10.0    DegC INSBT INSB_Body_T
+    4    1   71.121  -35.255   4.442   25.0    10.0    DegC MCTBT MCT_Body_T
+    5    1    0.0    100.0     0.0     60.0    40.0     %RH OBRH  Bruker_Optic_RH
+    6    1    0.0     -1.0     0.0      5.0     5.0   Volts EXSL  Extern_E_Radiance
+    7    1    0.0     -1.0     0.0      5.0     5.0   Volts WXSL  Extern_W_Radiance
+    8    1    0.0      1.0     0.0      1.0     1.0   Volts EXSLS Extern_E_RadianceS
+    9    1    0.0      1.0     0.0      1.0     1.0   Volts WXSLS Extern_W_RadianceS
+   10    1    0.0    100.0     0.0     60.0    40.0     %RH OTRH  Atm_Rel_Humidity
+   11    1   75.202  -22.345   1.67    25.0    10.0    DegC LPST  Laser_PS_T
+   12    1   -0.3326  14.969   0.0      5.0     5.0     MPH WSPD  Atm_Wind_Speed
+   13    1  449.2    -64.9     0.0      5.0     5.0     Deg WDIR  ATM_Wind_Dir_E_of_N
+   14    1   75.202  -22.345   1.67    25.0    10.0    DegC LAST  Laser_T
+   15    1  -32.60    74.86    0.0     20.0    20.0    DegC OTEMP Atm_Temperature
+!

@@ -1,0 +1,131 @@
+#  OPUSSCAN.LIST  25 April 1997  JWH
+#
+# This file is a list of opus macros and auxiliary information needed by
+# for octrl to run OPUS.  '# ' at the beginning of a line is a comment and
+# can be anywhere - remember the space.
+# No blank lines!
+# Use '! ' to end list
+#
+# The format is:  command : STANDBY, PARK which are followed by the start time in minute of the day
+#                           START which is followed by a
+#                                start time           - minute of the da
+#                                window               - duration in minutes
+#                                #                    - of scans to run during that duration
+#                           SCAN is followed by
+#                                macro name:          - only one for now
+#                                experiment name:     - starts with G for internal source and S for sun,
+#                                duration:            - integer seconds estimate for scan to complete
+#
+# exp: STANDBY should overlap next macro to keep door shut
+#
+# COMMAND MACRO   EXP           DUR
+# next integer is the number of commands is START and STANDBY and PARK and FILL
+# don't do anything for 15min after FILL
+21
+PARK 0
+FILL 10
+STANDBY 100
+START 105 8
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+STANDBY 300
+START 305 8
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+PARK 400
+STANDBY 500
+START 505 8
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+STANDBY 685
+FILL 687
+STANDBY 700
+START 710 16
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+STANDBY 900
+START 905 16
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+STANDBY 1100
+START 1105 16
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+STANDBY 1300
+START 1305 8
+SCAN CalcGain.mtx s3i035ac0.xpm 300
+SCAN CalcGain.mtx s4i035ac0.xpm 300
+SCAN CalcGain.mtx s5i035ac0.xpm 300
+SCAN CalcGain.mtx s6h035ac0.xpm 600
+SCAN CalcGain.mtx s1i035ac0.xpm 300
+SCAN CalcGain.mtx s2i035ac0.xpm 300
+SCAN CalcGain.mtx s9i035ac0.xpm 300
+SCAN CalcGain.mtx sai035ac0.xpm 300
+STANDBY 1400
+PARK  1405
+!
+
+
+
+SCAN CalcGain.mtx s6h035ac0_test.xpm 300
+SCAN CalcGain.mtx s6h035ac0_test.xpm 300

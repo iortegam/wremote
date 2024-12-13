@@ -1,0 +1,152 @@
+#  OPUSSCAN.LIST  25 April 1997  JWH
+#
+# This file is a list of opus macros and auxiliary information needed by
+# for octrl to run OPUS.  '# ' at the beginning of a line is a comment and
+# can be anywhere - remember the space.
+# No blank lines!
+# Use '! ' to end list
+#
+# UPDATE
+#
+# 12 MAR 2001 - updated macros and info files to use F-B scans
+#               now use CSIPK01.MAC and S1IFNB0A.XPM
+#
+# 9 DEC 1997 - changed the elevation range to elevation and time.  These are
+#              either/or.  How to use?  When using elevation angle put the
+#              angle in the first position and the tolerance also in degrees
+#              as a negative number in the second position.  When using
+#              time put the time in minutes since midnight in the second
+#              position and the tolerence in minutes in the first position
+#              as a negative number.
+#
+#            - added scan duration in integer seconds. This is used to check
+#              if OPUS has hung.
+# 2 SEP 1998
+#            - added # of scans to macros and each line in this file
+#               remember to take this into account for duration value
+#
+# The format is: macro name:            must be a CS... macro!
+#                experiment name:       starts with G for internal source
+#                                               and S for sun,
+#                                       or filename for zpd peak macro
+#                                       or START, FINISH, CLOSOP, FTP, NEWDAY
+#                                       or PROCESS only!
+#                priority number:       5 is highest, 1 lowest,
+#                time interval:         in decimal days,
+#                elevation angle:       degrees, or -time tolerance in minutes
+#                time:                  integer minutes since midnight, or
+#                                       -elevation angle tolerance in degrees
+#                duration:              integer seconds estimate for scan
+#                                       to complete
+#                number of scans:       1 2 whatever you want
+#                snr range,             w#1, w#2
+#                wavenumber range 1: fmt w#1 w#2    region to be FTP'd back,
+#                wavenumber range 2: fmt w#1 w#2    region to be FTP'd back,
+#                wavenumber range 3: fmt w#1 w#2    region to be FTP'd back.
+#                  where fmt: OPUS
+#                             BNR
+#                             2IX
+#                             SKIP to not cut this spectrum
+#                             COPY copies the OPUS data file to the ftp direc
+#                             w#'s: use 0 for entire spectrum.
+#
+# NOTE: currently having trouble working with forward - backward experiments
+#       so for now only do forward scans.
+# SNR regions for each filter:
+# 1     4036.84         4037.25
+# 2     3022.85         3022.99
+# 3     2924.83         2925.13
+# 4     2461.7          2462.0
+# 5     1985.19         1985.5  InSb
+# 5     ?               ?       HCT
+# 6     832.0           832.7
+#
+# Rewind occurs at ~208deg AZM
+# exp: STANDBY should overlap next macro to keep door shut
+#
+# MAC         EXP   PRI ITV   EL  TI  DUR #S  SN1      SN2    TYPE  R1     R2    TYPE  R1     R2    TYPE  R1  R2
+-           START     2 1.0 -200 450
+CSIPK02.mac S2INFOC.0 2 1.0 -200 450  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S6HNFOC.0 2 1.0 -200 450  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S1INFOC.0 2 1.0 -200 450  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSIPK02.mac S5INFOC.0 2 1.0 -200 450  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S8HNFOC.0 2 1.0 -200 450  1000 4  907.854  907.977 OPUS  860.0  880.0 OPUS  770.0  790.0 skip 0.0 0.0
+CSIPK02.mac S3INFOC.0 2 1.0 -200 450  600  2 2924.866 2925.100 OPUS 2920.0 2950.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S4INFOC.0 2 1.0 -200 450  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+-           STANDBY   1 1.0 -240 200
+-           START     2 1.0 -300 700
+CSIPK02.mac S2INFOC.0 2 1.0 -300 700  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S6HNFOC.0 2 1.0 -300 700  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S1INFOC.0 2 1.0 -300 700  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSIPK02.mac S5INFOC.0 2 1.0 -300 700  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S8HNFOC.0 2 1.0 -300 700  1000 4  907.854  907.977 OPUS  860.0  880.0 OPUS  770.0  790.0 skip 0.0 0.0
+CSIPK02.mac S3INFOC.0 2 1.0 -300 700  600  2 2924.866 2925.100 OPUS 2920.0 2950.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S4INFOC.0 2 1.0 -300 700  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+-           STANDBY   1 1.0 -340 700
+-           START     2 1.0 -200 1100
+CSIPK02.mac S1INFOC.0 2 1.0 -200 1100  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSHPK02.mac S6HNFOC.0 2 1.0 -200 1100  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S2INFOC.0 2 1.0 -200 1100  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S8HNFOC.0 2 1.0 -200 1100  1000 4  907.854  907.977 OPUS  860.0  880.0 OPUS  770.0  790.0 skip 0.0 0.0
+CSIPK02.mac S3INFOC.0 2 1.0 -200 1100  600  2 2924.866 2925.100 OPUS 2920.0 2950.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S4INFOC.0 2 1.0 -200 1100  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+CSIPK02.mac S5INFOC.0 2 1.0 -200 1100  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+-           FINISH    2 1.0 -240 1100
+-           PROCESS   1 1.0 -200 1200
+-           CLOSEOP   1 1.0 -200 1200
+-           FTP       1 1.0 -2   1438
+-           NEWDAY    2 1.0 -10  0000
+!
+
+-           STANDBY   1 1.0 -283 900
+CSHPK02.mac S8HNFOC.0 2 1.0 -120 1215  1000 4  907.854  907.977 OPUS  860.0  880.0 OPUS  770.0  790.0 skip 0.0 0.0
+CSIPK02.mac S1INFOC.0 2 1.0 -120 1215  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSIPK02.mac S2INFOC.0 2 1.0 -120 1215  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK02.mac S6HNFOC.0 2 1.0 -120 1215  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S3INFOC.0 2 1.0 -120 1215  600  2 2924.866 2925.100 OPUS 2920.0 2950.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S5INFOC.0 2 1.0 -120 1215  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK02.mac S4INFOC.0 2 1.0 -120 1215  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+
+
+-           START     2 1.0 -200 1050
+CSHPK01.mac S6HNFOC.0 2 1.0 -200 1050  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK01.mac S8HNFOB.0 2 1.0 -200 1050  1000 4  907.854  907.977 OPUS  865.0  870.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S1INFOB.0 2 1.0 -200 1050  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSIPK01.mac S2INFOB.0 2 1.0 -200 1050  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S3INFOB.0 2 1.0 -200 1050  600  2 2924.866 2925.100 OPUS 2920.0 2930.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S4INFOB.0 2 1.0 -200 1050  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+CSIPK01.mac S5INFOB.0 2 1.0 -200 1050  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK01.mac S6HNFOC.0 2 1.0 -200 1050  1600 8 1139.075 1139.168 OPUS 1100.0 1200.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK01.mac S8HNFOB.0 2 1.0 -200 1050  1000 4  907.854  907.977 OPUS  865.0  870.0 skip 0000.0 0000.0 skip 0.0 0.0
+-           FINISH    2 1.0 -20  1150
+-           PROCESS   1 1.0 -220 1200
+-           CLOSEOP   1 1.0 -220 1200
+-           FTP       1 1.0 -2   1438
+-           NEWDAY    2 1.0 -10  0000
+
+
+!
+CSCELL.mac  GHBRIF3   2 1.0 -200 1100 26000 64 2524.866 2525.100 copy 2920.0 2935.0 copy 2660.0 2665.0 copy 2505.0 2510.0
+-           FINISH    1 1.0 -220 1200
+-           PROCESS   1 1.0 -220 1200
+-           CLOSEOP   1 1.0 -220 1200
+!
+
+CSCELL.mac  GHBRIF3   2 1.0 -200 1100 1000 2 2924.866 2925.100 copy 2920.0 2935.0 copy 2660.0 2665.0 copy 2505.0 2510.0
+CSCELL.mac  S3IFMF00  2 1.0 -260 10 700 2 2924.866 2925.100 copy 2920.0 2935.0 skip 0.0 0.0 skip 4030.0 4050.0
+-           START     2 1.0 -260 10
+CSINT01.mac G4ITEST1  1 1.0 -1000 10 700 2 2461.7 2462.0  OPUS 2400.0 2402.0 bnr 0.0 0.0 2ix 0.0 0.0
+# MAC         EXP   PRI IRV   EL  TI  DUR   #S  SN1      SN2    TYPE  R1     R2    TYPE  R1     R2    TYPE  R1  R2
+-           START     2 1.0 -300 450
+CSIPK01.mac S1INFOB.0 2 1.0 -300 450  600  2 4038.727 4038.871 OPUS 4030.0 4050.0 OPUS 4260.0 4280.0 skip 0.0 0.0
+CSIPK01.mac S2INFOB.0 2 1.0 -300 450  600  2 3381.155 3381.536 OPUS 3000.0 3050.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S3INFOB.0 2 1.0 -300 450  600  2 2924.866 2925.100 OPUS 2920.0 2930.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S4INFOB.0 2 1.0 -300 450  600  2 2526.228 2526.618 OPUS 2400.0 2440.0 OPUS 2000.0 2100.0 skip 0.0 0.0
+CSIPK01.mac S5INFOB.0 2 1.0 -300 450  600  2 1985.260 1985.510 skip 2040.0 2060.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSIPK01.mac S7INFOB.0 2 1.0 -300 450  600  2 4374.200 4374.455 OPUS 4260.0 4280.0 skip 0000.0 0000.0 skip 0.0 0.0
+CSHPK01.mac S6HNFOB.0 2 1.0 -300 450  1600 8 1139.075 1139.168 OPUS 850.00 1000.0 OPUS 1100.0 1200.0 skip 0.0 0.0
+-           FINISH    1 1.0 -320 450
+-           PROCESS   1 1.0 -320 40
+-           CLOSEOP   1 1.0 -320 450
+-           FTP       1 1.0 -39  1400
+-           NEWDAY    2 1.0 -2   0000

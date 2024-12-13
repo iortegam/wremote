@@ -1,0 +1,256 @@
+#----------------------------------------------------------------------------------------
+# Name:
+#        FL0_Defaults.input
+#
+# Purpose:
+#       This is the main input file for operations/observations at FL0
+#
+#
+#
+# Notes:
+#       1)
+#
+#----------------------------------------------------------------------------------------
+
+#------------------------
+# Base directory for data
+# LogDirectory -- General logging that is not DAYDIR, eg current file (note final /)
+#------------------------
+
+Dir_baseData = Y:\id\fl0\
+Dir_Log      = C:\Users\bldopus\wremote\bin\ops\
+Dir_bin      = C:\Users\bldopus\wremote\bin\
+
+#---------------------------
+# TCP Data Server Parameters
+#-------------------------------------------------------------------------------------------
+# FTSDataServ_IP   -- IP address of where the TCP data server is hosted: #127.0.0.1  
+# FTSDataServ_PORT -- Port used by the TCP data server
+# Bruker_IP        -- IP address of the EWS on Bruker
+# OPUSServer_IP    -- IP address of the Windows PC rSolarSunning OPUS
+# TCPbufferSize    -- Max buffer size allowed in transfer of data to and from TCP data server
+# EWSupdateInt     -- Interval [seconds] between updating the TCP data server with information from the Bruker EWS
+# FTS_TZ           -- Time zone
+#-------------------------------------------------------------------------------------------
+FTS_DataServ_IP    = 192.168.0.122  # OLD PC 192.168.0.160 #128.117.32.93
+FTS_DataServ_PORT  = 5555
+FTS_DATASERV_BSIZE = 4024
+Bruker_IP          = fl0-ifs.acom.ucar.edu  #10.10.0.1            
+UPS_IP             = 192.168.50.175
+Bruker_UpdateInt   = 5
+OPUS_Server_IP     = 127.0.0.1            
+FTS_TZ             = America/Denver
+
+#---------------------------------------------------
+# OPUS variables
+# Dir_xpm      -- Windows path to xpm folder
+# Dir_macro    -- Windows path to macro folder
+# Dir_WindData -- Windows path to shared data folder
+#---------------------------------------------------
+#---------------------------------------------------
+# OPUS variables
+# macroInSb     -- Windows path to macro folder - Macro for InSB detector        
+# macroMCT     -- Windows path to macro folder - Macro for MCT detector           
+# macroTest      -- Macro for test connection     
+# Dir_xpm          -- Windows path to xpm folder
+# Dir_WindData -- Windows path to shared data folder
+# GainFlg           -- 1 or 0; Flag to use Gains in the Macr
+# Opus_exe          -- Windows path for opus executable
+# Opus_timeout    -- Opus timeout (seconds) to get response from Bruker
+#---------------------------------------------------
+macroInSb          = C:\Users\bldopus\wremote\Macro\BLD\CalcGainInSb.mtx
+macroMCT           = C:\Users\bldopus\wremote\Macro\BLD\CalcGainMCT.mtx
+Dir_xpm            = C:\Users\bldopus\wremote\XPM\Solar\
+##Dir_WinData       = \\otmlo\Daily_Data\
+Dir_WinData        = Y:\id\fl0
+##Dir_WinData       = \\otserver.acom.ucar.edu\ya4\id\fl0
+#Dir_WinData        = C:\data
+GainFlg            = 1
+
+Opus_exe           = C:\Program Files (x86)\Bruker\OPUS_7.8.44\opus.exe
+
+Opus_timeout       = 450 
+
+Opus_fltrs         = 1,2,3,b,4,5,6,9,3,0,a
+
+
+#-------------------
+# Tracker parameters
+#----------------------------------------------------
+# File_trackerInput   -- Input file for NCAR tracke
+# Tracker_status      -- Status Parameters sent to the TCP server from the tracker:
+#						INITIALIZING, LOCK, SEARCHING, EPHEM, PARK, TERMINATED
+# Tracker_cmnd        -- Commands to the tracker control program: CAM, STANDBY, EPHEM, PARK, QUIT
+# Tracker_sunpix, Tracker_azimuth, Tracker_elevation, and Tracker_sunrad -- initialize parameters
+#----------------------------------------------------
+#File_trackerInput = /home/mloftir/remote/ops/thule_trackerCtl.py
+Tracker_status     = INITIALIZING
+Tracker_power      = NAN
+Tracker_cmnd       = CLOSE  #STANDBY
+Tracker_sunpix     = -999
+Tracker_azimuth    = -999
+Tracker_elevation  = -999
+Tracker_sunrad     = -999
+
+
+#-----------------------
+# SMTP email information
+#--------------------------------------------------------------------------
+# fromEmail   -- Email address sent from. This does not need to be a legite
+#                email address
+# toEmail     -- Email address(s) letter is sent to. Comma delimited.
+#---------------------------------------------------------------------------
+Local_Server = ndir.ucar.edu
+Local_port   = 25
+Email_from   = FTIR@fl0
+Email_to     = iortega@ucar.edu,jamesw@ucar.edu
+
+#---------------------
+# Input lists for mlod
+#---------------------------------------------------------------------------
+# AnalogFile      -- List of analog inputs
+# DigitalFile     -- List of digital inputs and outputs
+Daq_analog_Update -- Interval (seconds) bewteen updating analog signals
+#---------------------------------------------------------------------------
+File_AnalogInput    = C:\Users\bldopus\wremote\bin\ops\analog.list
+File_DigitalInput   = C:\Users\bldopus\wremote\bin\ops\digital.list
+
+Daq_Update          = 10
+#---------------------------------------------------------------------------
+# Input lists for Weather transmitter (Young ResponseONE 92000)
+#---------------------------------------------------------------------------
+# Atm_Port         -- Serial Port
+# Atm_Rate         -- Baud Rate (Transmitter default is 9600)
+# Atm_UpdateInt    -- Interval [seconds] between updating the TCP data server with Met Data 
+#---------------------------------------------------------------------------
+Atm_Port      = COM8    #COM4 - OLD PC   #/dev/ttyS0  # --> LINUX
+Atm_Rate      = 9600
+Atm_UpdateInt = 5
+Atm_updateave = 20
+#---------------------------------------------------------------------------
+# Input lists for Weather - FL0 EOL
+#---------------------------------------------------------------------------
+FL0_URL       =  https://archive.eol.ucar.edu/cgi-bin/weather.cgi?site=fl&sample=1
+ML_URL        =  https://archive.eol.ucar.edu/cgi-bin/weather.cgi?site=ml&sample=1
+FL0_UpdateInt = 10
+RAD_URL       = https://skywatch.colorado.edu
+CLD_URL       = https://bouldercast.com/allsky.png
+
+CU_MET        = https://skywatch.colorado.edu/
+
+#---------------------------------------------------------------------------
+# Interface with OPUS Parameters
+#--------------------------------------------------------------------------------------
+# IOtimeoutMeas  -- The amount of time opusIO program waits [minutes] for a scan
+#                   before the it considers the OPUS program hung
+# IOtimeout      -- The amount of time opusIO program waits [???seconds] for a response
+#                   from OPUS after sending a command. After every command OPUS should
+#                   send back a response
+# Opus_cmnd      -- command to OPUSIO program running on windows PC
+# opus_lastscan  -- initialize parameter
+#--------------------------------------------------------------------------------------
+#IOtimeoutMeas = 20
+#IOtimeout     = 30
+Opus_cmnd      = STANDBY
+Opus_lastscan  = NO-SCAN
+Opus_lastxpm   = NO-SCAN
+
+#-------------------------
+# Input lists for dispatch
+#---------------------------------------------------------------------------
+# OPUSScanList = list of experiments to send OPUS
+# TopoFile     = horizon minimums
+#---------------------------------------------------------------------------
+File_OPUSScanlist = /home/mloftir/remote/ops/opusscan.list
+File_TopoInput = /home/mloftir/remote/ops/maunaloa.top
+
+#-------------------------
+# Dispatch command input
+#---------------------------------------------------------------------------
+# RemoteCmdFile = Command file searched in each dispatch loop
+#---------------------------------------------------------------------------
+File_RemoteCmd = /home/mloftir/remote/ops/command.rmt
+
+#--------------------------------
+# Observing Conditions Parameters
+#-------------------------------------------------------------------------------------------
+# Extern_Solar_Flip_Min -- External solar sensor nominal elevation mirror position, volts 0-10
+# Extern_Solar_Nom_Min  -- External solar flipped elevation mirror position A, volts 0-10
+# MaxWindSpeed          -- Maximum tolerable wind speed miles/hour (at Thule is meters/sec)
+# MaxRelHumidity        -- Maximum outside relativity %rh
+# EXTERN_SOLAR_DELAY    -- delay in minutes of good sun readings before opening hatch
+# LN2FillDur            -- Time to hold LN2 switch on during detector fill in minutes
+#-------------------------------------------------------------------------------------------
+# min xtern solar about 2.0 - 2.2  (Use 2.07 2016)
+EXTERN_SOLAR_FRONT_MIN    = 5.0         # Min Volts scaled by cos(sza) for 'clear sky' FRONT - direct sun  ; 2.3 summer?
+EXTERN_SOLAR_BACK_MIN     = 5.0         #
+EXTERN_SOLAR_DELAY        = 5           # Minutes to average to check solar conditions
+LN2_FILL_DUR              = 4
+LN2_DAILY_HOUR            = 6           # Hour of day for filling (local time)
+LN2_DAILY_MINUTE          = 30          # Minute of the day for filling (local time)
+LN2_PRESSURE_MIN          = 10.0
+HIGH_WIND_SPEED_LIMIT     = 6.0      # M/S
+HIGH_GUST_SPEED_LIMIT     = 8.0      # M/S
+HIGH_WIND_SPEED_RECOVER_T = 20
+UPS_RECOVER_T             = 5
+UPS_POWERFAIL             = FALSE
+OBS_SZA_MIN               = 85    
+HIGH_RH_LIMIT             = 90
+
+
+#-------------------------------------------------------------------------------------------------------------------------------
+#
+#                                                 ATDSIS PARAMETERS
+#
+#------------------------------------------------------------------------------------------------------------------------------
+#-------------------------
+# Site location parameters
+#--------------------------------------------------------------------------
+# ATDSIS_LAT         - Latitude of site (Deg N)
+# ATDSIS_LON         - Longitude of site (Deg E)
+# ATDSIS_ELEVATION   - Elevation of site (m)
+#--------------------------------------------------------------------------
+ATDSIS_LAT         = 40.04
+ATDSIS_LON         = 254.76
+ATDSIS_ELEVATION   = 1612.0
+#----------------------------------------------------
+# Communication
+#----------------------------------------------------
+ATDSIS_STATUS      = INITIALIZING
+ATDSIS_PORT        = COM10   #COM6 - OLD PC
+ATDSIS_RATE        = 115200   #9600
+ATDSIS_UPDATEINT   = 20
+ATDSIS_LOGINT      = 60   
+
+#------------------------------------------
+# Settings for Azimuth and Elevation Motors
+#-------------------------------------------------------------------------------
+# ATDSIS_SZAMAX     - Max sza to track 
+# ATDSIS_AZSOFTLIM1 - position travel limit for azimuth relative to North (below this number motor stops) 
+# ATDSIS_AZSOFTLIM2 - position travel limit for azimuth relative to North (above this number motor stops)
+# ATDSIS_AZHOME     - Azimuth in Degree when parked
+# ATDSIS_NOMINALVEL1 - Velocity of AZ motor (v-unit - Revolutions/min)
+# ATDSIS_GEARRATIO  - MOTOR SHAFT RATIO (REVOLUTIONS)
+# ATDSIS_AZOFFSET   - Offset in degree of motor zero wrt to True North (0) 
+# ATDSIS_RESOLUTION = Number of steps in 360deg (Encoder increments)
+# Calibration on July 24 2022:
+# at 200 steps the upper plate was tight with the edge of power switch at 56 deg relative to North
+# hence 56deg is the limit 1, then 3600deg is the lim2.
+# home position is defined at 90 deg
+# 200 steps is 17 degrees, hence azimuth offset is 56 - 17 = 39 deg
+#Use>> python3 atdsisNCAR.py -c to find the calibration offest (ATDSIS_AZOFFSET)
+# if negative offset use negative offset below
+# if positive offset use positive offset below
+#-------------------------------------------------------------------------------
+ATDSIS_SZAMAX      = 100.0
+ATDSIS_AZSOFTLIM1  = 34.0   #400 p- unit
+ATDSIS_AZSOFTLIM2  = 351.0  #4000 p-unit
+ATDSIS_AZHOME      = 90.0
+ATDSIS_NOMINALVEL1 = 250
+ATDSIS_GEARRATIO   = 44        
+ATDSIS_AZOFFSET    = -120   #-117   #-32.   #-18.0  #-20.0     
+ATDSIS_ENCODERSTEP = 4096    
+!
+
+
+1300 - 34 

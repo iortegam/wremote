@@ -1,0 +1,29 @@
+#-------------------------------------------------------------------------
+#-------------------------------------------------------------------------
+# Name: digital.list
+#
+# Purpose:
+#       digital input/output signals used at FL0
+#
+# Notes:
+#       - Using a Data Acquisition USB DAQ Device 12-Bit, 100 kS/s (https://www.mccdaq.com/usb-data-acquisition/USB-201.aspx)
+#       - The following lines consist of:
+#             * COLUMN 1: channel number 0 - X, integer
+#             * COLUMN 2: active_switch
+#             * COLUMN 3: mechanical_state_for_logic_1
+#             * COLUMN 4: same_for_logic_0
+#             * COLUMN 5: nemonic
+#             * COLUMN 6: description
+# Additional Notes:
+#       
+#-------------------------------------------------------------------------
+#-------------------------------------------------------------------------
+#COLUMN1 COLUMN2 COLUMN3 COLUMN4 COLUMN5 COLUMN6 
+    0   	1  		OFF    	ON 		LQDN2  LN2_Fill_Switch
+	1  		1  		OFF    	ON  	HTCHR  SolSeek_Hatch_Relay (shutter)
+	2  		1  		OFF    	ON  	SK28V  SolSeek_28V Relay (power 28v)
+	3  		1 		OPEN  	CLSD  	HTCHP  SolSeek_Hatch_Position
+	4  		1  		OFF    	ON  	LQSN2  LN2_DIO_status   (COLUMN 2 == 1 EQUAL GETTING 5V)
+	5  		1  		OFF    	ON  	SKOFR  SolSeek_OFF_Relay
+	6  		0  		OFF    	ON  	N/A..  N/A
+	7  		0  		OFF    	ON  	N/A..  N/A

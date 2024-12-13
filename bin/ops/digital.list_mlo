@@ -1,0 +1,40 @@
+# Digital.list
+# December 2017 at MLO, Sensoray S626 but new tcp server so add nemonics
+#  active flag
+# 04 AUG 1998
+# Update 8 May 2015
+# This is a list of the digital inputs at the OPTO-22
+# 0-7 are output controls
+# 8-15 are inputs - mostly the optical switchs on the stepper tracker
+# format of the file:
+# # - is a comment
+# ! - ends the file
+# OPTO-22 is active low
+# channel active_switch mechanical_state_for_logic_0  same_for_logic_1 nemonic description
+# nemonic has 5 char
+24
+1   0  OFF    ON  N/A..  N/A
+2   0  OFF    ON  N/A..  N/A 
+3   1  OFF    ON  DBELC  DEC_B_Elec_Control
+4   0  OFF    ON  N/A..  N/A 
+5   0  OFF    ON  N/A..  N/A
+6   1  OFF    ON  IRCOL  Mid-IR_Cooler
+7   1  OFF    ON  LQDN2  LN2_Fill_Switch
+8   1 CLSD  OPEN  VCVLV  Vacuum_Valve
+9   1  OFF    ON  VCRST  Vacuum_Reset
+10  1  OFF    ON  VCPMP  Vacuum_Pump
+11  1  OFF    ON  HTCHR  SolSeek_Hatch_Relay
+12  1 LOCL  REMT  VCTRL  Vacuum_Pump_Control
+13  1  OFF    ON  SKONR  SolSeek_ON_Relay
+14  1  OFF    ON  SKOFR  SolSeek_OFF_Relay
+15  0  OFF    ON  N/A..  Dyn_Mirror_Pwr
+16  1  OFF    ON  DABRK  DEC_A_Bruker
+17  1 OPEN  CLSD  HTCHP  SolSeek_Hatch_Position
+18  0  OFF    ON  N/A..  N/A
+19  1  OFF    ON  SK28V  SolSeek_28V
+20  0  OFF    ON  N/A..  N/A
+21  0  OFF    ON  N/A..  N/A
+22  0  OFF    ON  N/A..  N/A
+23  0  OFF    ON  N/A..  N/A 
+24  0  OFF    ON  N/A..  N/A
+!

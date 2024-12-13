@@ -1,0 +1,451 @@
+Sun, 13 Oct 2024 19:43:38 INFO     **************** Starting Dispatch.py ***********************
+Sun, 13 Oct 2024 19:43:38 INFO     CMD: OBS
+Sun, 13 Oct 2024 19:44:30 INFO     **************** NEW DAY (LT) ****************
+Mon, 14 Oct 2024 21:13:49 INFO     **************** Starting Dispatch.py ***********************
+Mon, 14 Oct 2024 21:13:49 INFO     CMD: OBS
+Mon, 14 Oct 2024 21:13:50 INFO     **************** NEW DAY (LT) ****************
+Mon, 14 Oct 2024 21:13:51 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:18:57 INFO     Initial solar Conditions OK: 6.08 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 21:18:57 INFO     sza (deg): 59.95, saa (deg): 224.72
+Mon, 14 Oct 2024 21:18:57 INFO     TRACKER_STATUS: OFF
+Mon, 14 Oct 2024 21:18:57 INFO     TRACKER_POWER: OFF
+Mon, 14 Oct 2024 21:20:27 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Mon, 14 Oct 2024 21:25:50 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:25:51 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:25:51 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:30:55 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:30:55 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:30:55 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:35:52 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:35:52 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:35:52 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:40:57 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:40:58 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:40:58 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:46:10 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:46:10 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:46:10 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:50:34 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:50:34 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:50:34 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 21:59:07 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 21:59:07 INFO     TRACKER_STATUS: ON
+Mon, 14 Oct 2024 21:59:07 INFO     TRACKER_POWER: ON
+Mon, 14 Oct 2024 22:02:50 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:02:50 INFO     Solar Conditions not ok: 0.19 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:04:14 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:09:19 INFO     Initial solar Conditions OK: 2.41 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:09:19 INFO     sza (deg): 67.38, saa (deg): 235.88
+Mon, 14 Oct 2024 22:09:19 INFO     TRACKER_STATUS: OFF
+Mon, 14 Oct 2024 22:09:19 INFO     TRACKER_POWER: OFF
+Mon, 14 Oct 2024 22:14:00 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:14:00 INFO     Solar Conditions not ok: 0.22 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:15:24 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:20:24 INFO     Initial solar Conditions OK: 5.13 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:20:24 INFO     sza (deg): 69.16, saa (deg): 238.12
+Mon, 14 Oct 2024 22:31:33 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:31:33 INFO     Solar Conditions not ok: 0.07 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:32:57 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:38:00 INFO     Initial solar Conditions OK: 2.70 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 22:38:00 INFO     sza (deg): 72.07, saa (deg): 241.54
+Mon, 14 Oct 2024 22:44:11 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:49:14 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 22:53:57 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:02:40 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:02:40 INFO     Solar Conditions not ok: -0.19 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 23:04:04 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:09:07 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:14:11 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:19:11 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:24:15 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:29:18 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:34:22 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Mon, 14 Oct 2024 23:39:26 INFO     Initial solar Conditions OK: 3.28 a.u (scaled by cos(sza))
+Mon, 14 Oct 2024 23:39:26 INFO     sza (deg): 82.84, saa (deg): 252.47
+Mon, 14 Oct 2024 23:46:17 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Wed, 16 Oct 2024 22:00:04 INFO     **************** Starting Dispatch.py ***********************
+Wed, 16 Oct 2024 22:00:04 INFO     CMD: OBS
+Wed, 16 Oct 2024 22:00:06 INFO     **************** NEW DAY (LT) ****************
+Wed, 16 Oct 2024 22:05:13 INFO     Initial solar Conditions OK: 6.26 a.u (scaled by cos(sza))
+Wed, 16 Oct 2024 22:05:13 INFO     sza (deg): 67.37, saa (deg): 234.62
+Wed, 16 Oct 2024 22:05:13 INFO     TRACKER_STATUS: OFF
+Wed, 16 Oct 2024 22:05:13 INFO     TRACKER_POWER: OFF
+Wed, 16 Oct 2024 22:06:38 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Wed, 16 Oct 2024 22:11:42 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:11:42 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:16:50 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:16:51 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:22:04 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:22:04 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:27:08 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:27:08 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:32:25 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:32:25 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:36:50 INFO     TRACKER_STATUS: ON
+Wed, 16 Oct 2024 22:36:50 INFO     TRACKER_POWER: ON
+Wed, 16 Oct 2024 22:45:55 INFO     Solar Conditions not ok: 1.21 a.u (scaled by cos(sza))
+Thu, 17 Oct 2024 06:00:04 INFO     **************** NEW DAY (LT) ****************
+Thu, 17 Oct 2024 12:55:42 INFO     Filling LN2 for 5.0 minutes
+Thu, 17 Oct 2024 13:50:13 INFO     Initial solar Conditions OK: 2.39 a.u (scaled by cos(sza))
+Thu, 17 Oct 2024 13:50:13 INFO     sza (deg): 84.08, saa (deg): 107.67
+Thu, 17 Oct 2024 13:50:17 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Thu, 17 Oct 2024 13:55:51 INFO     Solar Conditions not ok: -0.41 a.u (scaled by cos(sza))
+Fri, 18 Oct 2024 00:41:00 INFO     **************** Starting Dispatch.py ***********************
+Fri, 18 Oct 2024 00:41:00 INFO     CMD: OBS
+Fri, 18 Oct 2024 00:42:19 INFO     **************** NEW DAY (LT) ****************
+Fri, 18 Oct 2024 06:00:12 INFO     **************** NEW DAY (LT) ****************
+Fri, 18 Oct 2024 12:53:39 INFO     Filling LN2 for 5.0 minutes
+Fri, 18 Oct 2024 13:46:24 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Fri, 18 Oct 2024 13:51:31 INFO     Initial solar Conditions OK: 4.72 a.u (scaled by cos(sza))
+Fri, 18 Oct 2024 13:51:31 INFO     sza (deg): 84.06, saa (deg): 108.19
+Fri, 18 Oct 2024 13:51:33 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Fri, 18 Oct 2024 13:56:35 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Fri, 18 Oct 2024 14:00:59 INFO     LN2 Warning: FL0D_LN2_DEWAR_PRESS_PSI lower than 10.0!!
+Tue, 22 Oct 2024 14:13:01 INFO     **************** Starting Dispatch.py ***********************
+Tue, 22 Oct 2024 14:13:01 INFO     CMD: OBS
+Tue, 22 Oct 2024 14:13:02 INFO     **************** NEW DAY (LT) ****************
+Tue, 22 Oct 2024 14:18:08 INFO     Initial solar Conditions OK: 6.05 a.u (scaled by cos(sza))
+Tue, 22 Oct 2024 14:18:08 INFO     sza (deg): 80.21, saa (deg): 113.88
+Tue, 22 Oct 2024 14:18:08 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:18:08 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:18:09 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Tue, 22 Oct 2024 14:22:41 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:22:41 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:27:23 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:27:23 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:31:55 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:31:55 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:36:58 INFO     TRACKER_STATUS: OFF
+Tue, 22 Oct 2024 14:36:58 INFO     TRACKER_POWER: OFF
+Tue, 22 Oct 2024 14:43:18 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:43:18 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:47:40 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:47:40 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:56:13 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:56:13 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 14:59:05 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 14:59:05 INFO     TRACKER_POWER: ON
+Tue, 22 Oct 2024 15:04:07 INFO     TRACKER_STATUS: OFF
+Tue, 22 Oct 2024 15:04:07 INFO     TRACKER_POWER: OFF
+Tue, 22 Oct 2024 15:08:18 INFO     TRACKER_STATUS: ON
+Tue, 22 Oct 2024 15:08:18 INFO     TRACKER_POWER: ON
+Thu, 21 Nov 2024 20:30:32 INFO     **************** Starting Dispatch.py ***********************
+Thu, 21 Nov 2024 20:30:32 INFO     CMD: OBS
+Thu, 21 Nov 2024 20:31:44 INFO     **************** NEW DAY (LT) ****************
+Thu, 21 Nov 2024 20:40:53 INFO     **************** Starting Dispatch.py ***********************
+Thu, 21 Nov 2024 20:40:53 INFO     CMD: OBS
+Thu, 21 Nov 2024 20:40:54 INFO     **************** NEW DAY (LT) ****************
+Thu, 21 Nov 2024 20:46:02 INFO     Initial solar Conditions OK: 5.65 a.u (scaled by cos(sza))
+Thu, 21 Nov 2024 20:46:02 INFO     sza (deg): 66.24, saa (deg): 210.57
+Thu, 21 Nov 2024 20:46:02 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 20:46:02 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 20:46:02 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Thu, 21 Nov 2024 20:51:35 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 20:51:35 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 20:56:27 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 20:56:27 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:01:30 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:01:30 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:06:32 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:06:32 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:11:34 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:11:34 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:16:17 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:16:17 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:24:49 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:24:49 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:28:32 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:28:32 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:33:34 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:33:34 INFO     TRACKER_POWER: N A N
+Thu, 21 Nov 2024 21:36:46 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Thu, 21 Nov 2024 21:36:46 INFO     TRACKER_POWER: N A N
+Mon, 02 Dec 2024 16:49:09 INFO     **************** Starting Dispatch.py ***********************
+Mon, 02 Dec 2024 16:49:09 INFO     CMD: OBS
+Mon, 02 Dec 2024 16:49:16 INFO     **************** NEW DAY (LT) ****************
+Mon, 02 Dec 2024 16:54:24 INFO     Initial solar Conditions OK: 7.00 a.u (scaled by cos(sza))
+Mon, 02 Dec 2024 16:54:24 INFO     sza (deg): 67.76, saa (deg): 150.90
+Mon, 02 Dec 2024 16:54:24 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 16:54:24 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 16:54:24 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Mon, 02 Dec 2024 16:58:46 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 16:58:46 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:03:09 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:03:09 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:07:51 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:07:51 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:12:24 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:12:24 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:16:56 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:16:56 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:21:08 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:21:08 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:29:21 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:29:21 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:32:23 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:32:23 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:36:46 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:36:46 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 17:39:38 INFO     TRACKER_STATUS: ON
+Mon, 02 Dec 2024 17:39:38 INFO     TRACKER_POWER: ON
+Mon, 02 Dec 2024 22:43:30 INFO     Solar Conditions not ok: 0.05 a.u (scaled by cos(sza))
+Mon, 02 Dec 2024 23:00:04 INFO     Initial solar Conditions OK: 4.84 a.u (scaled by cos(sza))
+Mon, 02 Dec 2024 23:00:04 INFO     sza (deg): 84.87, saa (deg): 235.43
+Tue, 03 Dec 2024 16:50:58 INFO     **************** Starting Dispatch.py ***********************
+Tue, 03 Dec 2024 16:50:58 INFO     CMD: OBS
+Tue, 03 Dec 2024 16:51:05 INFO     **************** NEW DAY (LT) ****************
+Tue, 03 Dec 2024 16:56:13 INFO     Initial solar Conditions OK: 7.05 a.u (scaled by cos(sza))
+Tue, 03 Dec 2024 16:56:13 INFO     sza (deg): 67.75, saa (deg): 151.28
+Tue, 03 Dec 2024 16:56:13 INFO     TRACKER_STATUS: OFF
+Tue, 03 Dec 2024 16:56:13 INFO     TRACKER_POWER: OFF
+Tue, 03 Dec 2024 16:57:32 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Tue, 03 Dec 2024 17:02:06 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:02:06 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:06:28 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:06:28 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:11:01 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:11:01 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:15:33 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:15:33 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:20:06 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:20:06 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:24:28 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:24:28 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:32:41 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:32:41 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:35:43 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:35:43 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:40:17 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:40:17 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 17:43:09 INFO     TRACKER_STATUS: ON
+Tue, 03 Dec 2024 17:43:09 INFO     TRACKER_POWER: ON
+Tue, 03 Dec 2024 22:42:33 INFO     Solar Conditions not ok: -0.49 a.u (scaled by cos(sza))
+Tue, 03 Dec 2024 22:59:20 INFO     Initial solar Conditions OK: 3.66 a.u (scaled by cos(sza))
+Tue, 03 Dec 2024 22:59:20 INFO     sza (deg): 84.80, saa (deg): 235.14
+Tue, 03 Dec 2024 23:54:03 INFO     **************** Starting Dispatch.py ***********************
+Tue, 03 Dec 2024 23:54:03 INFO     CMD: OBS
+Tue, 03 Dec 2024 23:54:04 INFO     **************** NEW DAY (LT) ****************
+Wed, 04 Dec 2024 07:00:14 INFO     **************** NEW DAY (LT) ****************
+Wed, 04 Dec 2024 14:00:17 INFO     Filling LN2 for 5.0 minutes
+Wed, 04 Dec 2024 14:47:29 INFO     Initial solar Conditions OK: 7.69 a.u (scaled by cos(sza))
+Wed, 04 Dec 2024 14:47:29 INFO     sza (deg): 84.22, saa (deg): 125.62
+Wed, 04 Dec 2024 14:48:52 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Wed, 04 Dec 2024 22:42:50 INFO     Solar Conditions not ok: -0.70 a.u (scaled by cos(sza))
+Wed, 04 Dec 2024 23:04:24 INFO     Initial solar Conditions OK: 7.91 a.u (scaled by cos(sza))
+Wed, 04 Dec 2024 23:04:24 INFO     sza (deg): 85.61, saa (deg): 235.85
+Thu, 05 Dec 2024 07:00:10 INFO     **************** NEW DAY (LT) ****************
+Thu, 05 Dec 2024 13:57:30 INFO     Filling LN2 for 5.0 minutes
+Thu, 05 Dec 2024 14:45:05 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Thu, 05 Dec 2024 22:41:59 INFO     Solar Conditions not ok: -0.61 a.u (scaled by cos(sza))
+Thu, 05 Dec 2024 23:03:33 INFO     Initial solar Conditions OK: 7.76 a.u (scaled by cos(sza))
+Thu, 05 Dec 2024 23:03:33 INFO     sza (deg): 85.50, saa (deg): 235.55
+Fri, 06 Dec 2024 07:00:06 INFO     **************** NEW DAY (LT) ****************
+Fri, 06 Dec 2024 13:58:07 INFO     Filling LN2 for 5.0 minutes
+Fri, 06 Dec 2024 14:45:43 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Fri, 06 Dec 2024 22:42:49 INFO     Solar Conditions not ok: -0.72 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 07:00:09 INFO     **************** NEW DAY (LT) ****************
+Sat, 07 Dec 2024 13:57:39 INFO     Filling LN2 for 5.0 minutes
+Sat, 07 Dec 2024 14:45:20 INFO     Initial solar Conditions OK: 8.75 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 14:45:20 INFO     sza (deg): 85.00, saa (deg): 125.28
+Sat, 07 Dec 2024 14:46:43 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Sat, 07 Dec 2024 17:01:08 INFO     Solar Conditions not ok: 4.04 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:02:33 INFO     Initial solar Conditions OK: 5.50 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:02:33 INFO     sza (deg): 67.78, saa (deg): 152.56
+Sat, 07 Dec 2024 17:41:37 INFO     Solar Conditions not ok: 4.48 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:43:02 INFO     Initial solar Conditions OK: 5.42 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:43:02 INFO     sza (deg): 64.80, saa (deg): 162.21
+Sat, 07 Dec 2024 17:51:59 INFO     Solar Conditions not ok: 3.65 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:53:24 INFO     Initial solar Conditions OK: 5.08 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 17:53:24 INFO     sza (deg): 64.24, saa (deg): 164.79
+Sat, 07 Dec 2024 18:09:49 INFO     Solar Conditions not ok: 3.95 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 18:51:34 INFO     Initial solar Conditions OK: 5.29 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 18:51:34 INFO     sza (deg): 62.74, saa (deg): 179.67
+Sat, 07 Dec 2024 19:00:26 INFO     Solar Conditions not ok: 1.67 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 19:32:06 INFO     Initial solar Conditions OK: 5.45 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 19:32:06 INFO     sza (deg): 63.40, saa (deg): 190.13
+Sat, 07 Dec 2024 19:40:59 INFO     Solar Conditions not ok: 4.27 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 20:22:44 INFO     Initial solar Conditions OK: 5.39 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 20:22:44 INFO     sza (deg): 66.14, saa (deg): 202.67
+Sat, 07 Dec 2024 20:46:43 INFO     Solar Conditions not ok: 1.82 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 21:23:26 INFO     Initial solar Conditions OK: 6.67 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 21:23:27 INFO     sza (deg): 71.87, saa (deg): 216.34
+Sat, 07 Dec 2024 21:35:40 INFO     Solar Conditions not ok: 1.27 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 22:02:17 INFO     Initial solar Conditions OK: 5.91 a.u (scaled by cos(sza))
+Sat, 07 Dec 2024 22:02:17 INFO     sza (deg): 76.67, saa (deg): 224.19
+Sat, 07 Dec 2024 22:33:49 INFO     Solar Conditions not ok: 4.31 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 07:00:10 INFO     **************** NEW DAY (LT) ****************
+Sun, 08 Dec 2024 13:56:50 INFO     Filling LN2 for 5.0 minutes
+Sun, 08 Dec 2024 14:46:27 INFO     Initial solar Conditions OK: 6.26 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 14:46:27 INFO     sza (deg): 84.97, saa (deg): 125.46
+Sun, 08 Dec 2024 14:47:49 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Sun, 08 Dec 2024 15:13:49 INFO     Solar Conditions not ok: 3.29 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 20:53:12 INFO     Initial solar Conditions OK: 5.33 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 20:53:12 INFO     sza (deg): 68.77, saa (deg): 209.60
+Sun, 08 Dec 2024 21:02:05 INFO     Solar Conditions not ok: 3.91 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 21:03:36 INFO     Initial solar Conditions OK: 6.19 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 21:03:36 INFO     sza (deg): 69.78, saa (deg): 211.92
+Sun, 08 Dec 2024 21:53:34 INFO     Solar Conditions not ok: -0.52 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 21:55:01 INFO     Initial solar Conditions OK: 7.43 a.u (scaled by cos(sza))
+Sun, 08 Dec 2024 21:55:01 INFO     sza (deg): 75.74, saa (deg): 222.63
+Sun, 08 Dec 2024 22:41:39 INFO     Solar Conditions not ok: -0.70 a.u (scaled by cos(sza))
+Mon, 09 Dec 2024 07:00:10 INFO     **************** NEW DAY (LT) ****************
+Mon, 09 Dec 2024 13:56:32 INFO     Filling LN2 for 5.0 minutes
+Wed, 11 Dec 2024 18:13:52 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 18:13:52 INFO     CMD: OBS
+Wed, 11 Dec 2024 18:13:58 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 18:25:41 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 18:25:41 INFO     CMD: OBS
+Wed, 11 Dec 2024 18:25:41 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 18:31:15 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 18:31:15 INFO     CMD: OBS
+Wed, 11 Dec 2024 18:32:01 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 18:37:07 INFO     Initial solar Conditions OK: 6.89 a.u (scaled by cos(sza))
+Wed, 11 Dec 2024 18:37:07 INFO     sza (deg): 63.23, saa (deg): 175.49
+Wed, 11 Dec 2024 18:37:07 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Wed, 11 Dec 2024 18:37:07 INFO     TRACKER_POWER: N A N
+Wed, 11 Dec 2024 18:37:07 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Wed, 11 Dec 2024 18:50:55 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 18:50:55 INFO     CMD: OBS
+Wed, 11 Dec 2024 18:51:41 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 19:32:42 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 19:32:42 INFO     CMD: OBS
+Wed, 11 Dec 2024 19:33:29 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 19:38:35 INFO     Initial solar Conditions OK: 6.33 a.u (scaled by cos(sza))
+Wed, 11 Dec 2024 19:38:35 INFO     sza (deg): 63.92, saa (deg): 191.25
+Wed, 11 Dec 2024 19:38:35 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Wed, 11 Dec 2024 19:38:35 INFO     TRACKER_POWER: N A N
+Wed, 11 Dec 2024 19:38:35 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Wed, 11 Dec 2024 19:43:37 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Wed, 11 Dec 2024 19:43:37 INFO     TRACKER_POWER: N A N
+Wed, 11 Dec 2024 19:48:20 INFO     TRACKER_STATUS: I N I T I A L I Z I N G
+Wed, 11 Dec 2024 19:48:20 INFO     TRACKER_POWER: N A N
+Wed, 11 Dec 2024 21:20:33 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:20:33 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:20:34 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 21:24:54 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:24:54 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:24:54 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 21:28:12 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:28:12 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:28:47 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:28:47 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:29:02 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:29:02 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:29:03 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 21:34:09 INFO     Initial solar Conditions OK: 6.12 a.u (scaled by cos(sza))
+Wed, 11 Dec 2024 21:34:09 INFO     sza (deg): 73.20, saa (deg): 218.01
+Wed, 11 Dec 2024 21:34:09 INFO     Good solar conditions but High Wind Speed Detected: 7.1
+Wed, 11 Dec 2024 21:37:42 INFO     **************** Starting Dispatch.py ***********************
+Wed, 11 Dec 2024 21:37:42 INFO     CMD: OBS
+Wed, 11 Dec 2024 21:37:42 INFO     **************** NEW DAY (LT) ****************
+Wed, 11 Dec 2024 21:42:48 INFO     Initial solar Conditions OK: 6.67 a.u (scaled by cos(sza))
+Wed, 11 Dec 2024 21:42:48 INFO     sza (deg): 74.24, saa (deg): 219.78
+Wed, 11 Dec 2024 21:42:48 INFO     TRACKER_STATUS: OFF
+Wed, 11 Dec 2024 21:42:48 INFO     TRACKER_POWER: OFF
+Wed, 11 Dec 2024 21:44:06 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Wed, 11 Dec 2024 21:49:08 INFO     TRACKER_STATUS: OFF
+Wed, 11 Dec 2024 21:49:08 INFO     TRACKER_POWER: OFF
+Wed, 11 Dec 2024 21:55:08 INFO     TRACKER_STATUS: ON
+Wed, 11 Dec 2024 21:55:08 INFO     TRACKER_POWER: ON
+Wed, 11 Dec 2024 22:00:00 INFO     TRACKER_STATUS: OFF
+Wed, 11 Dec 2024 22:00:00 INFO     TRACKER_POWER: OFF
+Wed, 11 Dec 2024 22:08:51 INFO     TRACKER_STATUS: ON
+Wed, 11 Dec 2024 22:08:51 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 18:17:44 INFO     **************** Starting Dispatch.py 
+Thu, 12 Dec 2024 18:23:27 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:23:27 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:23:42 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:23:42 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:24:16 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:24:16 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:24:16 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 18:28:45 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:28:45 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:35:33 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:35:33 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:35:49 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:35:49 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:36:10 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:36:10 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:36:36 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:36:36 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:37:11 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:37:11 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:40:19 INFO     Filling LN2 for 2.0 minutes
+Thu, 12 Dec 2024 18:41:03 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:41:03 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:41:04 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 18:44:28 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:44:28 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:44:29 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 18:50:48 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 18:50:48 INFO     CMD: OBS
+Thu, 12 Dec 2024 18:50:48 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 18:55:55 INFO     Initial solar Conditions OK: 7.16 a.u (scaled by cos(sza))
+Thu, 12 Dec 2024 18:55:55 INFO     sza (deg): 63.17, saa (deg): 180.21
+Thu, 12 Dec 2024 18:55:55 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 18:55:55 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 18:55:55 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Thu, 12 Dec 2024 19:00:07 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:00:07 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:04:49 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:04:49 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:09:41 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:09:41 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:14:43 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:14:43 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:19:45 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:19:45 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:23:58 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:23:58 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:32:30 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:32:30 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:36:12 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:36:12 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:41:04 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:41:04 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:44:16 INFO     TRACKER_STATUS: ON
+Thu, 12 Dec 2024 19:44:16 INFO     TRACKER_POWER: ON
+Thu, 12 Dec 2024 19:50:17 INFO     Filling LN2 for 1.0 minutes
+Thu, 12 Dec 2024 20:43:41 INFO     Solar Conditions not ok: 4.89 a.u (scaled by cos(sza))
+Thu, 12 Dec 2024 21:25:47 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:25:47 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:25:48 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 21:27:54 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:27:54 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:28:36 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:28:36 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:30:50 INFO     Filling LN2 for 0.5 minutes
+Thu, 12 Dec 2024 21:35:34 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:35:34 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:35:34 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 21:36:59 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:36:59 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:37:00 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 21:38:49 INFO     Filling LN2 for 0.5 minutes
+Thu, 12 Dec 2024 21:41:13 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:41:13 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:41:14 INFO     **************** NEW DAY (LT) ****************
+Thu, 12 Dec 2024 21:42:53 INFO     **************** Starting Dispatch.py ***********************
+Thu, 12 Dec 2024 21:42:53 INFO     CMD: OBS
+Thu, 12 Dec 2024 21:42:54 INFO     **************** NEW DAY (LT) ****************
+Fri, 13 Dec 2024 07:00:19 INFO     **************** NEW DAY (LT) ****************
+Fri, 13 Dec 2024 13:34:30 INFO     Filling LN2 for 4 minutes
+Fri, 13 Dec 2024 15:30:48 INFO     Initial solar Conditions OK: 6.49 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 15:30:48 INFO     sza (deg): 79.12, saa (deg): 133.20
+Fri, 13 Dec 2024 15:32:06 INFO     Dispatch measurement starting at FL0 (Good conditions)
+Fri, 13 Dec 2024 17:39:50 INFO     Initial solar Conditions OK: 7.09 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 17:39:50 INFO     sza (deg): 65.64, saa (deg): 160.90
+Fri, 13 Dec 2024 18:32:27 INFO     Initial solar Conditions OK: 7.15 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 18:32:27 INFO     sza (deg): 63.46, saa (deg): 174.07
+Fri, 13 Dec 2024 19:06:04 INFO     Initial solar Conditions OK: 7.19 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 19:06:04 INFO     sza (deg): 63.28, saa (deg): 182.70
+Fri, 13 Dec 2024 19:24:52 INFO     Initial solar Conditions OK: 7.22 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 19:24:52 INFO     sza (deg): 63.60, saa (deg): 187.51
+Fri, 13 Dec 2024 19:24:52 INFO     Good solar conditions but High Wind Speed Detected: 6.3
+Fri, 13 Dec 2024 19:40:02 INFO     Initial solar Conditions OK: 7.21 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 19:40:02 INFO     sza (deg): 64.07, saa (deg): 191.36
+Fri, 13 Dec 2024 20:16:27 INFO     Initial solar Conditions OK: 7.34 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 20:16:27 INFO     sza (deg): 65.98, saa (deg): 200.34
+Fri, 13 Dec 2024 20:40:02 INFO     Initial solar Conditions OK: 7.33 a.u (scaled by cos(sza))
+Fri, 13 Dec 2024 20:40:02 INFO     sza (deg): 67.75, saa (deg): 205.91

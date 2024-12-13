@@ -1,0 +1,19 @@
+REM -------------------------------
+REM This Macro is for testing if the
+REM OPUS pipe is still viable
+REM -------------------------------
+
+VARIABLES SECTION
+NUMERIC <t1>      = 0;
+
+PROGRAM SECTION
+UserDialog ('0', NODEFAULTBUTTONS,EDIT:<t1>,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK);
+
+<t1> = <t1> + 5;
+
+REM ------------------------
+REM Pass data back to client
+REM ------------------------
+
+UserDialog ('0', NODEFAULTBUTTONS,EDIT:<t1>,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK,BLANK);
+PARAMETER SECTION

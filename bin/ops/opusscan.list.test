@@ -1,0 +1,143 @@
+#  OPUSSCAN.LIST  25 April 1997  JWH
+#
+# This file is a list of opus macros and auxiliary information needed by
+# for octrl to run OPUS.  '# ' at the beginning of a line is a comment and
+# can be anywhere - remember the space.
+# No blank lines!
+# Use '! ' to end list
+#
+# The format is:  command : STANDBY, PARK which are followed by the start time in minute of the day
+#                           START which is followed by a
+#                                start time           - minute of the da
+#                                window               - duration in minutes
+#                                #                    - of scans to run during that duration
+#                           SCAN is followed by
+#                                macro name:          - only one for now
+#                                experiment name:     - starts with G for internal source and S for sun,
+#                                duration:            - integer seconds estimate for scan to complete
+#
+# exp: STANDBY should overlap next macro to keep door shut
+#
+# COMMAND MACRO   EXP           DUR
+# next integer is the number of commands is START and STANDBY and PARK and FILL
+# don't do anything for 15min after FILL
+# mlo *2a.xpm have pgn x1 & REF used with pgncalc macro
+3
+PARK 0
+START 1 1
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+STANDBY 1440
+!
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+SCAN CalcGain.mtx s1ifml1a.300 xpm
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+STANDBY 1440
+!
+SCAN CalcGain.mtx s1ifml2a.xpm 300
+SCAN CalcGain.mtx s2ifml2a.xpm 300
+SCAN CalcGain.mtx s3ifml2a.xpm 300
+SCAN CalcGain.mtx s4ifml2a.xpm 300
+SCAN CalcGain.mtx s5ifml2a.xpm 300
+SCAN CalcGain.mtx s6hfml2a.xpm 600
+SCAN CalcGain.mtx s9ifml2a.xpm 300
+SCAN CalcGain.mtx saifml2a.xpm 300
+SCAN CalcGain.mtx sbifml2a.xpm 300
+SCAN CalcGain.mtx s1ifml2a.xpm 300
+SCAN CalcGain.mtx s2ifml2a.xpm 300
+SCAN CalcGain.mtx s3ifml2a.xpm 300
+SCAN CalcGain.mtx s4ifml2a.xpm 300
+SCAN CalcGain.mtx s5ifml2a.xpm 300
+SCAN CalcGain.mtx s6hfml2a.xpm 600
+SCAN CalcGain.mtx s9ifml2a.xpm 300
+SCAN CalcGain.mtx saifml2a.xpm 300
+SCAN CalcGain.mtx sbifml2a.xpm 300
+
+15
+PARK 0
+START 10 9
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+STANDBY 60
+START 65 9
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+STANDBY 120
+START 65 9
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+STANDBY 180
+START 960 9
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+STANDBY 1030
+START 1040 9
+SCAN CalcGain.mtx s1ifml1a.xpm 300
+SCAN CalcGain.mtx s2ifml1a.xpm 300
+SCAN CalcGain.mtx s3ifml1a.xpm 300
+SCAN CalcGain.mtx s4ifml1a.xpm 300
+SCAN CalcGain.mtx s5ifml1a.xpm 300
+SCAN CalcGain.mtx s6hfml1a.xpm 600
+SCAN CalcGain.mtx s9ifml1a.xpm 300
+SCAN CalcGain.mtx saifml1a.xpm 300
+SCAN CalcGain.mtx sbifml1a.xpm 300
+STANDBY 1100
+START 1110 9
+SCAN CalcGain.mtx s1ifml2a.xpm 300
+SCAN CalcGain.mtx s2ifml2a.xpm 300
+SCAN CalcGain.mtx s3ifml2a.xpm 300
+SCAN CalcGain.mtx s4ifml2a.xpm 300
+SCAN CalcGain.mtx s5ifml2a.xpm 300
+SCAN CalcGain.mtx s6hfml2a.xpm 600
+SCAN CalcGain.mtx s9ifml2a.xpm 300
+SCAN CalcGain.mtx saifml2a.xpm 300
+SCAN CalcGain.mtx sbifml2a.xpm 300
+STANDBY 1200
+FILL 1265
+STANDBY 1340
+!
+
+
+SCAN CalcGain.mtx s6h035ac0_test.xpm 300
+SCAN CalcGain.mtx s6h035ac0_test.xpm 300

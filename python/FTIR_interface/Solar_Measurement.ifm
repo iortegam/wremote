@@ -1,0 +1,81 @@
+#
+# Solar Measurement
+# Resolution 0.014, 3800-15500 (full bandwidth),
+# SI + InGaAs DC,
+# Aperture 0.5mm,
+# 1 scan single sided f/b
+#
+
+[setup]
+#
+# General setup parameters
+#
+type = solar
+savepath = /home/ftir/Measurements/Auto/Solar/%Y-%m-%dT%H:%M:%S      # Path to save data files
+holdoff = 120      # Sleep time in seconds after the end of measurement
+
+#[strackd]
+#
+# Communication with solar tracker daemon
+#
+#host = localhost
+#port = 59000
+#init = SSR      # Commands to send at the beginning of the init section
+#main = @log=5   # Commands to send at the beginning of the main section
+#exit = @log=0   # Commands to send at the beginning of the exit section
+
+[init]
+#
+# Initialization parameters
+#
+TIZ = 0                     # Time zone (UTC)
+UTC = %s                    # %s -> Unix time stamp (seconds since the epoch)
+IAM = MPI-BGC001_%$         # Session owner, %$ -> process ID
+
+[main]
+#
+# Section with parameters for main command
+#
+WRK = 1                     # Working Mode = Measuring Mode
+AMD = 7                     # Aquistion Mode
+UWN = 1                     # Channel specific LWN
+ITC = 0                     # Instrument Test Class
+CNM = MASTER-PC-MPI-BGC001  # Operator Name
+SNM = MPI-BGC001-Solar      # Sample Name
+SFM =                       # Sample Form
+DLY = 0                     # Delay after device change
+DEL = 0                     # Delay before measurement
+RES = 0.014000              # Resolution
+SRC = 201                   # Source on (NIR)
+LPF = 40.0                  # Low Pass Filter
+HPF = 0                     # High Pass Filter
+BMS = 1                     # Beam Splitter
+APT = 500                   # Aperture
+DTC = 0x4022                # Detector Settings
+VEL = 10.0                  # Scanner Velocity
+AQM = SD                    # Aquisition Mode
+HFW = 15500.000000          # Wanted High Frequency Limit
+LFW = 3800.000000           # Wanted Low Frequency Limit
+PHR = 4.000000              # Phase Resolution
+SON = 0                     # External Synchronisation
+PGN = 0                     # Preamplifier Gain
+ADC = 0                     # External/Analog Signals
+CMA = 0                     # Correlation Mode
+COR = 1                     # Correlation (On/Off)
+LCL = 0                     # Limit Correlation Low
+LCH = 32768                 # Limit Correlation High
+CHN = 1                     # Measurement Chanel
+SOT = 0                     # Scans or Minutes
+NSS = 2                     # Number of Scans
+RDX = 0                     # Bench Ready
+TSR = 256                   # Tolerance Scan Range
+GNS = 1                     # Signal or Gain
+SG2 = 1                     # Left Channel Signal Gain
+REP = 1                     # Repeat Measurement
+DDM = 0                     # Display during measurement
+DLR = 0                     # Display between measurement
+
+[exit]
+#
+# Parameters to set after the main command has completed
+#

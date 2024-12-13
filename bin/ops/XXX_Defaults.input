@@ -1,0 +1,103 @@
+#----------------------------------------------------------------------------------------
+# Name:
+#        XXX_Defaults.input
+#
+# Purpose:
+#       This is the main input file for operations/observations at Onsala
+#
+#
+#
+# Notes:
+#       1)
+#
+#----------------------------------------------------------------------------------------
+
+#------------------------
+# Base directory for data
+# LogDirectory -- General logging that is not DAYDIR, eg current file (note final /)
+#------------------------
+
+Dir_baseData = Y:\id\fl0\
+Dir_Log      = C:\Users\bldopus\wremote\bin\ops\
+Dir_bin      = C:\Users\bldopus\wremote\bin\
+
+#---------------------------
+# TCP Data Server Parameters
+#-------------------------------------------------------------------------------------------
+# FTSDataServ_IP   -- IP address of where the TCP data server is hosted: #127.0.0.1  
+# FTSDataServ_PORT -- Port used by the TCP data server
+# Bruker_IP        -- IP address of the EWS on Bruker
+# OPUSServer_IP    -- IP address of the Windows PC rSolarSunning OPUS
+# TCPbufferSize    -- Max buffer size allowed in transfer of data to and from TCP data server
+# EWSupdateInt     -- Interval [seconds] between updating the TCP data server with information from the Bruker EWS
+#-------------------------------------------------------------------------------------------
+FTS_DataServ_IP    = 192.168.0.160 #128.117.32.93
+FTS_DataServ_PORT  = 5555
+FTS_DATASERV_BSIZE = 4024
+Bruker_IP          = fl0-ifs.acom.ucar.edu  #10.10.0.1            
+UPS_IP             = 192.168.50.175
+Bruker_UpdateInt   = 5
+OPUS_Server_IP     = 127.0.0.1            
+
+#---------------------------------------------------
+# OPUS variables
+# Dir_xpm      -- Windows path to xpm folder
+# Dir_macro    -- Windows path to macro folder
+# Dir_WindData -- Windows path to shared data folder
+#---------------------------------------------------
+#---------------------------------------------------
+# OPUS variables
+# macroInSb     -- Windows path to macro folder - Macro for InSB detector        
+# macroMCT     -- Windows path to macro folder - Macro for MCT detector           
+# macroTest      -- Macro for test connection     
+# Dir_xpm          -- Windows path to xpm folder
+# Dir_WindData -- Windows path to shared data folder
+# GainFlg           -- 1 or 0; Flag to use Gains in the Macr
+# Opus_exe          -- Windows path for opus executable
+# Opus_timeout    -- Opus timeout (seconds) to get response from Bruker
+#---------------------------------------------------
+macroInSb          = C:\Users\bldopus\wremote\Macro\BLD\CalcGainInSb.mtx
+macroMCT           = C:\Users\bldopus\wremote\Macro\BLD\CalcGainMCT.mtx
+Dir_xpm            = C:\Users\bldopus\wremote\XPM\Solar\
+##Dir_WinData       = \\otmlo\Daily_Data\
+Dir_WinData        = Y:\id\fl0
+##Dir_WinData       = \\otserver.acom.ucar.edu\ya4\id\fl0
+#Dir_WinData        = C:\data
+GainFlg            = 1
+
+Opus_exe           = C:\Program Files (x86)\Bruker\OPUS_7.8.44\opus.exe
+
+Opus_timeout       = 450 
+
+Opus_fltrs         = 1,2,3,b,4,5,6,9,3,0,a
+
+
+#-----------------------
+# SMTP email information
+#--------------------------------------------------------------------------
+# fromEmail   -- Email address sent from. This does not need to be a legite
+#                email address
+# toEmail     -- Email address(s) letter is sent to. Comma delimited.
+#---------------------------------------------------------------------------
+Local_Server = ndir.ucar.edu
+Local_port   = 25
+Email_from   = FTIR@fl0
+Email_to     = iortega@ucar.edu,jamesw@ucar.edu
+
+
+#---------------------------------------------------------------------------
+# Interface with OPUS Parameters
+#--------------------------------------------------------------------------------------
+# IOtimeoutMeas  -- The amount of time opusIO program waits [minutes] for a scan
+#                   before the it considers the OPUS program hung
+# IOtimeout      -- The amount of time opusIO program waits [???seconds] for a response
+#                   from OPUS after sending a command. After every command OPUS should
+#                   send back a response
+# Opus_cmnd      -- command to OPUSIO program running on windows PC
+# opus_lastscan  -- initialize parameter
+#--------------------------------------------------------------------------------------
+#IOtimeoutMeas = 20
+#IOtimeout     = 30
+Opus_cmnd      = STANDBY
+Opus_lastscan  = NO-SCAN
+Opus_lastxpm   = NO-SCAN
