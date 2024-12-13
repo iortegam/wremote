@@ -20,12 +20,9 @@ git commit -m "onlogic fanless PC FTS" .
 
 (2) Create the repository in github: https://github.com/
 
-#Ivan's token: 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
 
 Once the repository and token are created: is
 
-#git remote add origin https://[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]@github.com/iortegam/wremote
-git push -u origin main
 
 
 #---------------------
